@@ -14,9 +14,14 @@ const Skills: React.FC = () => {
     <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-white mb-12">
-            Skills & Technologies
-          </h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+              Skills & Technologies
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 font-light">
+              The tools and technologies I use to bring ideas to life
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8">
             {skillCategories.map((category, index: number) => (

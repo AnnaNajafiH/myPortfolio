@@ -42,9 +42,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               {/* Logo */}
               <Link 
                 to="/" 
-                className="text-2xl font-bold text-gray-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="flex flex-col items-start group transition-colors"
               >
-                {personalInfo.name.split(' ').map((name: string) => name[0]).join('')}
+                <div className="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                  {personalInfo.name.split(' ').map((name: string) => name[0]).join('')}
+                </div>
+                <div className="w-9 h-px bg-primary-500 my-1"></div>
+                <div className="text-xxs text-gray-500 dark:text-gray-400 font-medium tracking-wide" style={{ fontSize: '0.5rem' }}>
+                  Full-Stack Developer
+                </div>
               </Link>
 
               {/* Desktop Navigation */}
