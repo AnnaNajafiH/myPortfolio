@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
               Get In Touch
             </a>
             
-            <a
+            {/* <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             >
               <FiDownload size={20} />
               Download Resume
-            </a>
+            </a> */}
           </div>
           
           {/* Social Links */}
