@@ -27,7 +27,7 @@ const ProjectsSection: React.FC = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Project Image */}
-                <div className="aspect-video relative bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 overflow-hidden">
+                <div className="aspect-video relative bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 overflow-hidden group/image">
                   {project.image && !project.image.includes('placeholder') ? (
                     <img 
                       src={project.image} 
@@ -51,6 +51,18 @@ const ProjectsSection: React.FC = () => {
                     <div className="text-white text-6xl font-bold opacity-80">
                       {project.name.split(' ').map((word: string) => word[0]).join('')}
                     </div>
+                  </div>
+
+                  {/* Hover Overlay with Action Buttons */}
+                  <div className="absolute inset-0 bg-black/70 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
+                    <Link
+                      to={`/projects/${project.id}`}
+                      className="flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 transform translate-y-4 group-hover/image:translate-y-0 font-medium"
+                      style={{ transitionDelay: '100ms' }}
+                    >
+                      <FaArrowRight className="w-4 h-4" />
+                      <span>View Details</span>
+                    </Link>
                   </div>
                 </div>
                 
