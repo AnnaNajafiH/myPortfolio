@@ -223,20 +223,38 @@ export const experience = [
 ];
 
 export const education = [
-  {
-    id: 1,
-    degree: "Bachelor of Science in Computer Science",
-    school: "University of Technology",
-    location: "City, State",
-    graduationDate: "May 2018",
-    description: "Relevant coursework: Data Structures, Algorithms, Software Engineering, Database Systems"
-  },
+    {
+        id: 1,
+        degree: "CS50's Programming with Python",
+        school: "Online course offered by Harvard University",
+        location: "Online",
+        graduationDate: "Juni 2025",
+        description: ""
+      },
   {
     id: 2,
-    degree: "Full Stack Web Development Bootcamp",
-    school: "Coding Bootcamp Institute",
-    location: "Online",
-    graduationDate: "Dec 2018",
-    description: "Intensive 6-month program covering modern web development technologies and best practices"
-  }
+    degree: "Full Stack Web & App Development Bootcamp",
+    school: "WBS Coding School",
+    location: "Berlin, Germany",
+    graduationDate: "Aug 2024",
+    description: ""
+  },
+
+  {
+    id: 3,
+    degree: "Master of Science in Organic Chemistry",
+    school: "University of Kashan",
+    location: "Kashan, Iran",
+    graduationDate: "Oct 2013",
+    description: ""
+  },
+  {
+    id: 4,
+    degree: "Bachelor of Science in Chemistry",
+    school: "University of Ahvaz",
+    location: "Ahvaz, Iran",
+    graduationDate: "Jun 2010",
+    description: ""
+  },
+
 ];
