@@ -65,7 +65,30 @@ export const projects = [
   {
     id: 1,
     name: "EasyShop",
+    shortDescription: "A modern full-stack e-commerce platform with advanced features and seamless user experience.",
     description: "A Full-Stack e-commerce platform built with modern web technologies, featuring a responsive React frontend and robust Node.js backend. This full-stack application demonstrates advanced TypeScript development, cloud deployment, and modern UI/UX design principles.",
+    detailedDescription: `EasyShop is a comprehensive e-commerce solution that showcases modern web development practices. The platform features a fully responsive React frontend built with TypeScript, ensuring type safety and better developer experience. The backend leverages Express.js and MongoDB to provide a robust and scalable API.
+
+Key features include user authentication with JWT tokens, secure payment processing through PayPal SDK integration, and a clean, intuitive user interface designed with Bootstrap. The application demonstrates full CRUD operations, advanced state management, and follows RESTful API design principles.
+
+The project showcases my ability to work with modern JavaScript frameworks, implement secure authentication systems, integrate third-party payment solutions, and deploy full-stack applications to cloud platforms.`,
+    features: [
+      "User Authentication & Authorization",
+      "Product Catalog Management", 
+      "Shopping Cart Functionality",
+      "Secure Payment Processing",
+      "Order Management System",
+      "Responsive Design",
+      "Admin Dashboard",
+      "Real-time Inventory Updates"
+    ],
+    challenges: [
+      "Implementing secure JWT authentication flow",
+      "Integrating PayPal SDK for payment processing",
+      "Managing complex state across multiple components",
+      "Ensuring responsive design across all devices",
+      "Optimizing performance for large product catalogs"
+    ],
     technologies: [
         "TypeScript",
         "React",
@@ -77,25 +100,80 @@ export const projects = [
       ],
     githubUrl: "https://github.com/AnnaNajafiH/EasyShop",
     liveUrl: "https://easyshop-frontend-u9wj.onrender.com/",
-    image: easyShopImage
+    image: easyShopImage,
+    gallery: [easyShopImage], // You can add more images later
+    status: "Completed",
+    duration: "3 months"
   },
   {
     id: 2,
     name: "BookLook",
-    description: "A responsive full-stack platform for managing public bookshelf system.",
-    technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "ai-image generator", "Tailwind CSS"],
+    shortDescription: "A community-driven platform for managing and sharing public bookshelf resources.",
+    description: "A responsive full-stack platform for managing public bookshelf system with AI-powered features and community engagement.",
+    detailedDescription: `BookLook is an innovative platform designed to revolutionize how communities manage and interact with public book-sharing systems. Built with React.js and powered by a robust Express.js backend, this application combines traditional book management with modern AI capabilities.
+
+The platform features an intelligent AI image generator that creates custom book covers and visual content, enhancing the user experience and making book discovery more engaging. Users can browse, reserve, and manage books through an intuitive interface designed with Tailwind CSS.
+
+The application implements secure user authentication using JWT tokens and provides real-time updates on book availability. The MongoDB database ensures efficient data management and scalability for growing book collections and user bases.`,
+    features: [
+      "AI-Powered Image Generation",
+      "Book Catalog Management",
+      "User Authentication System",
+      "Real-time Book Availability",
+      "Community Reviews & Ratings",
+      "Advanced Search & Filtering",
+      "Mobile-Responsive Design",
+      "Admin Management Tools"
+    ],
+    challenges: [
+      "Integrating AI image generation APIs",
+      "Implementing real-time book availability updates",
+      "Creating an intuitive book discovery interface",
+      "Managing complex user permissions and roles",
+      "Optimizing image loading and caching"
+    ],
+    technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "AI Image Generator", "Tailwind CSS"],
     githubUrl: "https://github.com/AnnaNajafiH/Book_look",
     liveUrl: "https://booklook24-1.onrender.com/",
-    image: bookLookImage
+    image: bookLookImage,
+    gallery: [bookLookImage], // You can add more images later
+    status: "Completed",
+    duration: "2 months"
   },
   {
     id: 3,
     name: "Pokémon Play",
-    description: "A responsive weather dashboard that displays current weather conditions and forecasts using third-party APIs.",
+    shortDescription: "An interactive Pokémon battle game with comprehensive Pokédex functionality.",
+    description: "An engaging Pokémon-themed application featuring battle mechanics, Pokédex exploration, and responsive design.",
+    detailedDescription: `Pokémon Play is an interactive web application that brings the beloved Pokémon universe to life through modern web technologies. Built with React and featuring a sleek Tailwind CSS design, this application provides users with an immersive Pokémon experience.
+
+The application features a comprehensive Pokédex with detailed information about various Pokémon species, including stats, abilities, and evolution chains. Users can engage in simulated battles, explore different Pokémon types, and track their progress through secure user authentication.
+
+The project demonstrates proficiency in API integration, state management, and creating engaging user interfaces. The responsive design ensures optimal performance across all devices, while the Express.js backend provides robust data management and user session handling.`,
+    features: [
+      "Interactive Pokémon Battles",
+      "Comprehensive Pokédex",
+      "User Progress Tracking",
+      "Pokémon Statistics Display",
+      "Type Effectiveness Calculator",
+      "Responsive Game Interface",
+      "User Authentication",
+      "Battle History & Analytics"
+    ],
+    challenges: [
+      "Implementing complex battle mechanics",
+      "Managing large datasets of Pokémon information",
+      "Creating smooth animations and transitions",
+      "Optimizing performance for mobile devices",
+      "Balancing game mechanics for fair play"
+    ],
     technologies: ["JavaScript", "React", "Express.js", "Tailwind CSS", "JWT"],
-    githubUrl: "https://github.com/yourusername/weather-dashboard",
+    githubUrl: "https://github.com/yourusername/pokemon-play",
     liveUrl: "https://wd51-pokebattle.netlify.app/pokedex",
-    image: pokemonImage
+    image: pokemonImage,
+    gallery: [pokemonImage], // You can add more images later
+    status: "Completed",
+    duration: "1.5 months"
   }
 ];
 
