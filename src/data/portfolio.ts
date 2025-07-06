@@ -1,7 +1,6 @@
 import easyShopImage from '../assets/images/easyShop.jpg.png';
 import bookLookImage from '../assets/images/booklook1.png';
 import pokemonImage from '../assets/images/pokemon1.png';
-import profileImage from '../assets/images/profilePic.jpg';
 
 export const personalInfo = {
   name: "Nahid Najafi",
