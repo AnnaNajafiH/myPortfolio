@@ -97,12 +97,19 @@ const Skills: React.FC = () => {
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
               Always learning and exploring new technologies
             </p>
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-blue-500 text-white font-medium rounded-full hover:from-primary-600 hover:to-blue-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <a 
+              href="#projects"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-blue-500 text-white font-medium rounded-full hover:from-primary-600 hover:to-blue-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <span>View My Projects</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       </div>
