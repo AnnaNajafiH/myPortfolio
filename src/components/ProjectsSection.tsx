@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
                     <Link
                       to={`/projects/${project.id}`}
-                      className="flex items-center gap-2 px-6 py-3 bg-gray-50 hover:bg-gray-200 text-gray-900 rounded-lg transition-all duration-200 transform translate-y-4 group-hover/image:translate-y-0 font-medium"
+                      className="px-8 py-3 bg-white text-gray-900 font-medium rounded-full hover:bg-gray-100 transition-colors duration-200 transform scale-95 group-hover:scale-100"
                       style={{ transitionDelay: '100ms' }}>
                       <span>View Details</span>
                     </Link>
