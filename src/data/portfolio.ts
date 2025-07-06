@@ -1,6 +1,5 @@
 import easyShopImage from '../assets/images/easyShop.jpg.png';
 import bookLookImage from '../assets/images/booklook2.png';
-import pokemonImage from '../assets/images/pokemon1.png';
 import SabaStudioImage from '../assets/images/sabaStudio.jpg';
 
 export const personalInfo = {
