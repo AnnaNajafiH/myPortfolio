@@ -1,6 +1,8 @@
-import easyShopImage from '../assets/easyShop.jpg.png';
-import bookLook from '../assets/booklook1.png';
-import pokemon from '../assets/pokemon1.png';
+import easyShopImage from '../assets/images/easyShop.jpg.png';
+import bookLookImage from '../assets/images/booklook1.png';
+import pokemonImage from '../assets/images/pokemon1.png';
+import profileImage from '../assets/images/profilePic.jpg';
+
 export const personalInfo = {
   name: "Nahid Najafi",
   title: "Full Stack Developer",
@@ -84,7 +86,7 @@ export const projects = [
     technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "ai-image generator", "Tailwind CSS"],
     githubUrl: "https://github.com/AnnaNajafiH/Book_look",
     liveUrl: "https://booklook24-1.onrender.com/",
-    image: bookLook
+    image: bookLookImage
   },
   {
     id: 3,
@@ -93,7 +95,7 @@ export const projects = [
     technologies: ["JavaScript", "React", "Express.js", "Tailwind CSS", "JWT"],
     githubUrl: "https://github.com/yourusername/weather-dashboard",
     liveUrl: "https://wd51-pokebattle.netlify.app/pokedex",
-    image: pokemon
+    image: pokemonImage
   }
 ];
 

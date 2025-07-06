@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolio';
-import profileImage from '../assets/profilePic.jpg'; 
+import profileImage from '../assets/images/profilePic.jpg'; 
 
 const About: React.FC = () => {
   return (

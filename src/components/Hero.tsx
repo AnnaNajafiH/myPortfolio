@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiGithub, FiMail, FiDownload, FiArrowDown, FiLinkedin } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolio';
-import profileImage from '../assets/profilePic.jpg'; 
+import profileImage from '../assets/images/profilePic.jpg'; 
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
