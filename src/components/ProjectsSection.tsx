@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/portfolio';
-import { FaGithub, FaExternalLinkAlt, FaArrowRight, FaClock, FaCheckCircle } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaArrowRight, FaClock } from 'react-icons/fa';
 
 const ProjectsSection: React.FC = () => {
   return (
@@ -57,10 +57,8 @@ const ProjectsSection: React.FC = () => {
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover/image:opacity-100 transition-all duration-300 flex items-center justify-center">
                     <Link
                       to={`/projects/${project.id}`}
-                      className="flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 transform translate-y-4 group-hover/image:translate-y-0 font-medium"
-                      style={{ transitionDelay: '100ms' }}
-                    >
-                      <FaArrowRight className="w-4 h-4" />
+                      className="flex items-center gap-2 px-6 py-3 bg-gray-50 hover:bg-gray-200 text-gray-900 rounded-lg transition-all duration-200 transform translate-y-4 group-hover/image:translate-y-0 font-medium"
+                      style={{ transitionDelay: '100ms' }}>
                       <span>View Details</span>
                     </Link>
                   </div>
