@@ -119,10 +119,10 @@ Key architectural features include global state management using React Context a
   },
   {
     id: 2,
-    name: "SabaStudio",
+    name: "SStudio",
     shortDescription: "A modern full-stack architecture website showcasing architectural projects with advanced design and seamless user experience.",
     description: "A Full-Stack architecture portfolio platform built with modern web technologies, featuring a responsive React frontend and robust Node.js backend. This comprehensive application demonstrates advanced TypeScript development, cloud deployment, and modern UI/UX design principles for architectural showcases.",
-    detailedDescription: `SabaStudio is a comprehensive architecture portfolio solution that showcases modern web development practices combined with elegant design presentation. The platform features a fully responsive React frontend built with TypeScript and Tailwind CSS, ensuring type safety, beautiful styling, and exceptional developer experience. The backend leverages Express.js and MongoDB to provide a robust and scalable API for project management.
+    detailedDescription: `SStudio is a comprehensive architecture portfolio solution that showcases modern web development practices combined with elegant design presentation. The platform features a fully responsive React frontend built with TypeScript and Tailwind CSS, ensuring type safety, beautiful styling, and exceptional developer experience. The backend leverages Express.js and MongoDB to provide a robust and scalable API for project management.
   
   Key features include project categorization with advanced filtering, image gallery management, contact form integration, and a clean, professional interface designed specifically for architecture website. The application demonstrates full CRUD operations for project management, advanced state management with custom React hooks, and follows RESTful API design principles.
   
