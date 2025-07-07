@@ -1,6 +1,12 @@
-import easyShopImage from '../assets/images/easyShop.jpg.png';
+import easyShopImage from '../assets/images/easyShop.jpg';
+import easyShopImage2 from '../assets/images/easyShop2.jpg';
+import easyShopImage3 from '../assets/images/easyShop3.jpg';
+import easyShopImage4 from '../assets/images/easyShop4.jpg';
+
+
 import bookLookImage from '../assets/images/booklook2.png';
 import SabaStudioImage from '../assets/images/sabaStudio.jpg';
+
 
 export const personalInfo = {
   name: "Nahid Najafi",
@@ -112,8 +118,8 @@ Key architectural features include global state management using React Context a
       ],
     githubUrl: "https://github.com/AnnaNajafiH/EasyShop",
     liveUrl: "https://easyshop-frontend-u9wj.onrender.com/",
-    image: easyShopImage,
-    gallery: [easyShopImage], // You can add more images later
+    image: easyShopImage2,
+    gallery: [easyShopImage, easyShopImage3, easyShopImage4 ], // You can add more images later
     status: "Completed",
     duration: "1 months"
   },
