@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const About: React.FC = () => {
   const navigate = useNavigate();
   const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
     navigate('/#contact');
   };
 
