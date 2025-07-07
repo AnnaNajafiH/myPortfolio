@@ -1,8 +1,14 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolio';
 import profileImage from '../assets/images/profilePic.jpg'; 
+import { useNavigate } from 'react-router-dom';
 
 const About: React.FC = () => {
+  const navigate = useNavigate();
+  const handleContactClick = (e: React.MouseEvent) => {
+    navigate('/#contact');
+  };
+
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
@@ -33,6 +39,9 @@ const About: React.FC = () => {
                 
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
                   {personalInfo.about.passion}
+                </p>
+                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+                  {personalInfo.about.endWords}
                 </p>
               </div>
 
@@ -69,6 +78,7 @@ const About: React.FC = () => {
               <div className="pt-4">
                 <a
                   href="#contact"
+                  onClick={handleContactClick}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <span>Let's Work Together</span>
@@ -80,7 +90,7 @@ const About: React.FC = () => {
             </div>
             
             <div className="relative">
-              <div className="w-full max-w-sm mx-auto">
+              <div className="w-full max-w-lg mx-auto">
                 <div className="aspect-square rounded-2xl shadow-2xl relative overflow-hidden">
                   <img
                     src={profileImage}

@@ -16,10 +16,11 @@ export const personalInfo = {
     and building scalable solutions.`,
   about: {
     subject: "From Chemistry to Web Development: Bridging Science and Code",
-    intro: "Hi, I’m a Junior Full-Stack Developer. My journey into tech is a bit unconventional coming from a strong background in Organic Chemistry and research, I’ve learned how to approach problems with both precision and creativity. Now, I apply that same mindset to writing clean, efficient code and solving complex challenges in web development.",
-    background: "For the past one and a half years, I’ve immersed myself in web development completing intensive bootcamps and courses that have equipped me to build full-stack applications using modern technologies. Whether designing intuitive, responsive user interfaces or building secure backend APIs, I enjoy turning complex ideas into seamless and engaging digital experiences.",
-    passion: "What motivates me most is the combination of my analytical background and passion for coding. Always eager to learn and improve, I’m driven by challenges that push me to grow both as a developer and as a lifelong learner.",
-    technologies: ["JavaScript", "TypeScript", "Python", "React.js", "Node.js", "MongoDB", "SQL", "Tailwind CSS", "Docker", "Git", "Postman", "Figma"],
+    intro: "Hi, I’m Nahid (Anna), a Junior Full-Stack Developer who took a bold leap from the world of Chemistry and science into the fast-paced tech universe  driven by an unstoppable passion for coding and innovation.",
+    background: "Over the past one and a half years, I’ve fully immersed myself in web development, completing intensive bootcamps and courses that have equipped me to build full-stack applications using modern technologies. Whether designing intuitive, responsive user interfaces or developing secure backend APIs, I enjoy transforming complex ideas into seamless and engaging digital experiences.",
+    passion: "My scientific background has sharpened my analytical thinking, and my love for programming continuously drives me to learn, grow, and embrace new challenges with enthusiasm. I’m passionate about blending creativity with logic to turn ideas into powerful digital solutions.",
+    endWords: "I’m excited to connect with fellow developers and professionals. Feel free to reach out if you’d like to collaborate or just chat about tech!",
+    technologies: ["JavaScript", "TypeScript", "Python", "React.js", "Node.js", "MongoDB", "SQL", "Tailwind CSS", "Bootstrap", "Docker", "Git", "Postman", "Figma"],
   }
 };
 
