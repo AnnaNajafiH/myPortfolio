@@ -98,13 +98,13 @@ Key architectural features include global state management using React Context a
         "Docker Deployment Ready"
     ],
     challenges: [
-        "Implementing secure PayPal payment processing workflow",
-        "Managing complex global state across multiple components",
-        "Building real-time cart synchronization and updates",
-        "Ensuring data consistency between frontend and backend",
-        "Implementing comprehensive order management system",
-        // "Optimizing database performance with connection pooling",
-        "Deploying with proper environment configuration"
+        // "Implementing secure PayPal payment processing workflow",
+        // "Managing complex global state across multiple components",
+        // "Building real-time cart synchronization and updates",
+        // "Ensuring data consistency between frontend and backend",
+        // "Implementing comprehensive order management system",
+        // // "Optimizing database performance with connection pooling",
+        // "Deploying with proper environment configuration"
     ],
     technologies: [
         "TypeScript",
@@ -153,11 +153,11 @@ Key architectural features include global state management using React Context a
       "Docker Deployment Ready"
     ],
     challenges: [
-      "Implementing complex filtering and search functionality",
-      "Managing large image galleries with optimal performance",
-      "Creating responsive layouts for architectural content",
-      "Ensuring cross-browser compatibility and SEO optimization",
-      "Deploying with proper CORS configuration for production"
+      // "Implementing complex filtering and search functionality",
+      // "Managing large image galleries with optimal performance",
+      // "Creating responsive layouts for architectural content",
+      // "Ensuring cross-browser compatibility and SEO optimization",
+      // "Deploying with proper CORS configuration for production"
     ],
     technologies: [
       "TypeScript",
@@ -197,11 +197,11 @@ The application implements secure user authentication using JWT tokens and provi
       "Dark Mode Support"
     ],
     challenges: [
-      "Integrating AI image generation APIs",
-      "Implementing real-time book availability updates",
-      "Creating an intuitive book discovery interface",
-      "Managing complex user permissions and roles",
-      "Optimizing image loading and caching"
+      // "Integrating AI image generation APIs",
+      // "Implementing real-time book availability updates",
+      // "Creating an intuitive book discovery interface",
+      // "Managing complex user permissions and roles",
+      // "Optimizing image loading and caching"
     ],
     technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "AI Image Generator", "Tailwind CSS"],
     githubUrl: "https://github.com/AnnaNajafiH/Book_look",

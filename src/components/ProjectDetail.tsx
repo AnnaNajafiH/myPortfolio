@@ -173,6 +173,7 @@ const ProjectDetail: React.FC = () => {
                 <FaLightbulb className="text-primary-600 w-4 h-4 md:w-5 md:h-5" />
                 Challenges & Solutions
               </h2>
+              {project.challenges && project.challenges.length > 0 ? (
               <ul className="space-y-3 md:space-y-4">
                 {project.challenges.map((challenge, index) => (
                   <li key={index} className="flex items-start gap-3">
@@ -183,6 +184,11 @@ const ProjectDetail: React.FC = () => {
                   </li>
                 ))}
               </ul>
+              ) : (
+                <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
+                  Challenges and solutions will be updated soon.
+                </p>  
+              )}
             </div>
 
             {/* Technical Details */}
