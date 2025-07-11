@@ -76,7 +76,7 @@ const ProjectDetail: React.FC = () => {
                 {/* Title and Status */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 text-white">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 mb-3 md:mb-4">
-                    <h1 className="text-xl md:text-4xl lg:text-5xl font-bold mb-2 hover:text-primary-600 dark:hover:text-primary-500">{project.name}</h1>
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 hover:text-primary-600 dark:hover:text-primary-500">{project.name}</h1>
                     <div className={`flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 text-gray-600 rounded-full backdrop-blur-sm text-xs ${
                       project.status === 'Completed' ? 'bg-green-200' 
                       : project.status === 'In Progress' ? 'bg-yellow-200' : 'bg-red-200'
