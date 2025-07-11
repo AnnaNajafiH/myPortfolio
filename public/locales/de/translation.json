@@ -2,10 +2,7 @@
   "header": {
     "home": "Startseite",
     "about": "Über mich",
-    "skills": "Fähigkeiten",
     "projects": "Projekte",
-    "education": "Ausbildung",
-    "certificates": "Zertifikate",
     "contact": "Kontakt"
   },
 "hero": {
@@ -13,7 +10,7 @@
   "title": "Full Stack Entwickler",
   "tagline": "Ideen in skalierbare digitale Erlebnisse verwandeln.",
   "location": "Göttingen, Deutschland",
-  "button": "Kontakt aufnehmen"
+  "button": "Kontakt"
 },
   "aboutMe": {
     "title": "Über mich",
