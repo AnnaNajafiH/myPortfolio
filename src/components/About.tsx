@@ -18,8 +18,8 @@ const About: React.FC = () => {
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-8">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-start">
+            <div className="space-y-8 order-2 md:order-none">
               {/* Subject/Headline */}
               <div className="space-y-4">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400">
@@ -90,7 +90,7 @@ const About: React.FC = () => {
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative order-1 md:order-none">
               <div className="w-full max-w-lg mx-auto">
                 <div className="h-auto rounded-2xl shadow-2xl relative overflow-hidden">
                   <img
