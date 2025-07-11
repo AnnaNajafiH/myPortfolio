@@ -1,0 +1,51 @@
+{
+  "header": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "education": "Ausbildung",
+    "certificates": "Zertifikate",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin Anna",
+    "role": "Full Stack Entwicklerin",
+    "description": "Ich entwickle moderne Webanwendungen mit Fokus auf Benutzererfahrung und sauberem Code."
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin eine leidenschaftliche Full-Stack-Entwicklerin mit Erfahrung in modernen Webtechnologien. Meine Reise in der Technik begann mit dem WBS Coding School Bootcamp, wo ich eine solide Grundlage in der Webentwicklung aufbaute."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "frontend": "Frontend-Entwicklung",
+    "backend": "Backend-Entwicklung",
+    "tools": "Tools & Technologien"
+  },
+  "projects": {
+    "title": "Projekte",
+    "viewAll": "Alle Projekte ansehen",
+    "viewDetails": "Details ansehen",
+    "viewCode": "Code ansehen",
+    "liveSite": "Live-Seite"
+  },
+  "certificates": {
+    "title": "Zertifikate & Erfolge",
+    "viewCertificate": "Zertifikat ansehen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut."
+  },
+  "language": {
+    "select": "Sprache auswählen",
+    "en": "Englisch",
+    "de": "Deutsch"
+  }
+}

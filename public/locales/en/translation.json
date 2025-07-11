@@ -1,0 +1,51 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "education": "Education",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Anna",
+    "role": "Full Stack Developer",
+    "description": "I craft modern web applications with a focus on user experience and clean code."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate full-stack developer with experience in modern web technologies. My journey in tech started with the WBS Coding School bootcamp, where I developed a strong foundation in web development."
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "tools": "Tools & Technologies"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewAll": "View All Projects",
+    "viewDetails": "View Details",
+    "viewCode": "View Code",
+    "liveSite": "Live Site"
+  },
+  "certificates": {
+    "title": "Certificates & Achievements",
+    "viewCertificate": "View Certificate"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "de": "German"
+  }
+}
