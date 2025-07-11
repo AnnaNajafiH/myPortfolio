@@ -68,15 +68,15 @@ const ProjectsPage: React.FC = () => {
 
                   {/* Status and Duration Badges */}
                   <div className="absolute top-4 left-4 right-4 flex justify-between">
-                    <div className={`flex items-center gap-1 px-3 py-1 text-white text-xs font-medium rounded-full backdrop-blur-sm ${
+                    <div className={`flex items-center gap-1 px-3 py-1 text-gray-600 text-xs font-medium rounded-full backdrop-blur-sm ${
                     project.status === 'Completed' 
-                    ? 'bg-green-500/90'
-                    : project.status === 'in Progress' 
-                    ? 'bg-yellow-600/90' : 'bg-red-500/90'}`}> 
+                    ? 'bg-green-200/90'
+                    : project.status === 'In Progress' 
+                    ? 'bg-yellow-200/90' : 'bg-red-200/90'}`}> 
                       <FaCheckCircle className="w-3 h-3" />
                       <span>{project.status}</span>
                     </div>
-                    <div className="flex items-center gap-1 px-3 py-1 bg-blue-500/90 text-white text-xs font-medium rounded-full backdrop-blur-sm">
+                    <div className="flex items-center gap-1 px-3 py-1 bg-gray-200/90 text-gray-600 text-xs font-medium rounded-full backdrop-blur-sm">
                       <FaClock className="w-3 h-3" />
                       <span>{project.duration}</span>
                     </div>

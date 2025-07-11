@@ -121,8 +121,8 @@ Key architectural features include global state management using React Context a
     liveUrl: "https://easyshop-frontend-u9wj.onrender.com/",
     image: easyShopImage2,
     gallery: [easyShopImage, easyShopImage3, easyShopImage4 ], // You can add more images later
-    status: "Completed",
-    duration: "1 months"
+    status: "In Progress",
+    duration: "3 weeks"
   },
   {
     id: 2,
@@ -172,7 +172,7 @@ Key architectural features include global state management using React Context a
     liveUrl: "https://sabastudio-frontend.onrender.com/",
     image: SabaStudioImage,
     gallery: [SabaStudioImage], // You can add more images later
-    status: "in Progress",
+    status: "In Progress",
     duration: " 2 weeks"
   },
   {

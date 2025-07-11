@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolio';
-import profileImage from '../assets/images/profilePic.jpg'; 
+import profileImage2 from '../assets/images/Anna2.jpg'; 
 import { useNavigate } from 'react-router-dom';
 
 const About: React.FC = () => {
@@ -92,9 +92,9 @@ const About: React.FC = () => {
             
             <div className="relative">
               <div className="w-full max-w-lg mx-auto">
-                <div className="aspect-square rounded-2xl shadow-2xl relative overflow-hidden">
+                <div className="h-auto rounded-2xl shadow-2xl relative overflow-hidden">
                   <img
-                    src={profileImage}
+                    src={profileImage2}
                     alt={`${personalInfo.name} - About section photo`}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     onError={(e) => {

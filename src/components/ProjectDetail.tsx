@@ -76,19 +76,19 @@ const ProjectDetail: React.FC = () => {
                 {/* Title and Status */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 text-white">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 mb-3 md:mb-4">
-                    <div className={`flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-green-500/90 rounded-full backdrop-blur-sm text-sm ${
-                      project.status === 'Completed' ? 'bg-green-500' 
-                      : project.status === 'in Progress' ? 'bg-yellow-600' : 'bg-red-500'
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 hover:text-primary-600 dark:hover:text-primary-500">{project.name}</h1>
+                    <div className={`flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 text-gray-600 rounded-full backdrop-blur-sm text-sm ${
+                      project.status === 'Completed' ? 'bg-green-200' 
+                      : project.status === 'In Progress' ? 'bg-yellow-200' : 'bg-red-200'
                     }`}>
                       <FaCheckCircle className="w-3 h-3 md:w-4 md:h-4" />
                       <span className="font-medium">{project.status}</span>
                     </div>
-                    <div className="flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-blue-500/90 rounded-full backdrop-blur-sm text-sm">
+                    <div className="flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 text-gray-600 bg-gray-200/90 rounded-full backdrop-blur-sm text-sm">
                       <FaClock className="w-3 h-3 md:w-4 md:h-4" />
                       <span className="font-medium">{project.duration}</span>
                     </div>
                   </div>
-                  <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 hover:text-primary-600 dark:hover:text-primary-500">{project.name}</h1>
                   <p className="text-sm md:text-xl text-gray-600 px-5 py-3 max-w-3xl leading-relaxed bg-slate-50 rounded-xl">{project.shortDescription}</p>
                 </div>
               </div>
