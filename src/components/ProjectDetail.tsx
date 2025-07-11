@@ -202,7 +202,7 @@ const ProjectDetail: React.FC = () => {
                   <h4 className="font-semibold text-gray-800 dark:text-white mb-2 text-sm md:text-base">Frontend</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.filter(tech => 
-                      ['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Bootstrap'].includes(tech)
+                      ['React', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Bootstrap', 'React Leaflet'].includes(tech)
                     ).map((tech, index) => (
                       <span key={index} className="px-2 py-1 md:px-3 md:py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs md:text-sm">
                         {tech}

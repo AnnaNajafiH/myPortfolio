@@ -178,23 +178,30 @@ Key architectural features include global state management using React Context a
   {
     id: 3,
     name: "BookLook",
-    shortDescription: "A community-driven platform for managing and sharing public bookshelf resources.",
-    description: "A responsive full-stack platform for managing public bookshelf system with AI-powered features and community engagement.",
-    detailedDescription: `BookLook is an innovative platform designed to revolutionize how communities manage and interact with public book-sharing systems. Built with React.js and powered by a robust Express.js backend, this application combines traditional book management with modern AI capabilities.
+    shortDescription: "A web app for managing public bookshelf worldwide.",
+    description: "A responsive full-stack web application designed to manage public bookshelf systems, featuring AI-powered tools and fostering community engagement.",
+    detailedDescription: `BookLook is an innovative platform that transforms the way people interact with public bookshelves. It allows users to easily explore and locate books placed in community bookshelves found in parks, cafés, and other public spaces. Through the platform, readers can discover which books are available nearby, track where certain books are placed, and even contribute by adding their own books to these shelves.
 
-The platform features an intelligent AI image generator , enhancing the user experience and making book discovery more engaging. Users can browse, reserve, and manage books through an intuitive interface designed with Tailwind CSS.
+Built with React.js on the frontend and powered by an Express.js backend, BookLook offers a smooth and modern user experience. It integrates advanced AI-driven features, such as a chatbot for answering queries and an AI image generator that creates personalized profile visuals based on the user’s bio. These tools not only enhance interaction but also bring a playful, personalized touch to how users engage with books and the platform itself.
 
-The application implements secure user authentication using JWT tokens and provides real-time updates on book availability. The MongoDB database ensures efficient data management and scalability for growing book collections and user bases.`,
+Beyond its intelligent features, BookLook ensures secure access with JWT-based authentication and provides real-time updates on book availability within these public shelves. The system is styled with Tailwind CSS for a clean, responsive design and relies on MongoDB for fast, scalable data storage. With BookLook, public bookshelf browsing becomes a dynamic and social experience, blending technology and community in a new way.`,
     features: [
-      "AI-Powered Image Generation",
-      "Book Catalog Management",
-      "User Authentication System",
-      "Real-time Book Availability",
-      "Community Reviews & Ratings",
-      "Advanced Search & Filtering",
-      "Mobile-Responsive Design",
-      "Admin Management Tools", 
-      "Dark Mode Support"
+      "React Leaflet for spotting bookshelf locations on the map",
+      "Advanced search functionality",
+      "Upload and manage photos of bookshelves and save in Cloudinary",
+      "Like and dislike system for bookshelves and books",
+      "Add, remove, and edit books inside bookshelves",
+      "AI-powered chatbot for user assistance",
+      "AI-powered image generation for personalized profiles",
+      "Admin dashboard for managing users and content",
+      "Geolocation API for finding location based on latitude and longitude and vice versa",
+      "Book catalog management",
+      "User authentication system",
+      "Real-time book availability updates",
+      "Community reviews and ratings",
+      "Advanced filtering options",
+      "Mobile-responsive design",
+      "Dark mode support"
     ],
     challenges: [
       // "Integrating AI image generation APIs",
@@ -203,7 +210,7 @@ The application implements secure user authentication using JWT tokens and provi
       // "Managing complex user permissions and roles",
       // "Optimizing image loading and caching"
     ],
-    technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "AI Image Generator", "Tailwind CSS"],
+    technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "AI Image Generator", "AI Powered Chatbot", "Tailwind CSS", "React Leaflet"],
     githubUrl: "https://github.com/AnnaNajafiH/Book_look",
     liveUrl: "https://booklook24-1.onrender.com/",
     image: bookLookImage,
