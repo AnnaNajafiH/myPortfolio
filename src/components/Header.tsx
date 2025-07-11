@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { FaBars, FaTimes, FaMoon, FaSun, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { personalInfo } from '../data/portfolio';
+import LanguageSelector from './LanguageSelector';
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -11,16 +13,17 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const navigationLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' }
+    { name: t('header.home'), path: '/' },
+    { name: t('header.about'), path: '/about' },
+    { name: t('header.projects'), path: '/projects' },
+    { name: t('header.contact'), path: '/contact' },
   ];
 
   return (
@@ -42,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {navigationLinks.map((link) => (
               <Link
                 key={link.path}
@@ -56,67 +59,66 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
                 {link.name}
               </Link>
             ))}
+          </nav>
+
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             
-            {/* Social Links */}
-            <div className="flex items-center space-x-4 ml-6 pl-6 border-l border-gray-300 dark:border-gray-600">
+            <button
+              onClick={toggleDarkMode}
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+              aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDarkMode ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
+            </button>
+
+            <div className="flex items-center space-x-4">
               <a
                 href={personalInfo.github}
                 target="_blank"
-                rel="noopener noreferrer"  //adds security and performance protections
-                className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                aria-label="GitHub Profile"
               >
-                <FaGithub className="text-xl" />
+                <FaGithub className="w-5 h-5" />
               </a>
               <a
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                aria-label="LinkedIn Profile"
               >
-                <FaLinkedin className="text-xl" />
+                <FaLinkedin className="w-5 h-5" />
               </a>
             </div>
-
-            {/* Dark Mode Toggle */}
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-            >
-              {isDarkMode ? <FaSun /> : <FaMoon />}
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400"
-            >
-              {isDarkMode ? <FaSun /> : <FaMoon />}
-            </button>
-            <button
-              onClick={toggleMenu}
-              className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-            >
-              {isMenuOpen ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
-            </button>
-          </div>
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-gray-700 dark:text-gray-300"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <FaTimes className="w-5 h-5" /> : <FaBars className="w-6 h-6" />}
+          </button>
+          
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700">
-            <div className="space-y-3">
+          <div className="md:hidden py-4">
+            <nav className="flex flex-col space-y-4">
               {navigationLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block font-medium transition-colors ${
+                  className={`${
                     location.pathname === link.path
-                      ? 'text-primary-600 dark:text-primary-400'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'
-                  }`}
+                      ? 'text-blue-500 dark:text-blue-400'
+                      : 'text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400'
+                  } transition-colors duration-200`}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
@@ -124,24 +126,36 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
               
               {/* Mobile Social Links */}
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                <a
-                  href={personalInfo.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                <LanguageSelector />
+                <button
+                  onClick={toggleDarkMode}
+                  className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                  aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
                 >
-                  <FaGithub className="text-xl" />
-                </a>
-                <a
-                  href={personalInfo.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                >
-                  <FaLinkedin className="text-xl" />
-                </a>
+                  {isDarkMode ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
+                </button>
+                <div className="flex items-center space-x-4">
+                  <a
+                    href={personalInfo.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="GitHub Profile"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                  </a>
+                  <a
+                    href={personalInfo.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <FaLinkedin className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
-            </div>
+            </nav>
           </div>
         )}
       </div>

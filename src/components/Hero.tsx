@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FiGithub, FiMail, FiArrowDown, FiLinkedin } from 'react-icons/fi';
 import { personalInfo } from '../data/portfolio';
 import profileImage from '../assets/images/profilePic.jpg'; 
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     aboutSection?.scrollIntoView({ behavior: 'smooth' });
@@ -42,15 +45,15 @@ const Hero: React.FC = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-6">
-            {personalInfo.title}
+            {t('hero.title')}
           </h2>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-2">
-            {personalInfo.tagline}
+            {t('hero.tagline')}
           </p>
           
           <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
-            📍 {personalInfo.location}
+            📍 {t('hero.location')}
           </p>
           
           {/* Action Buttons */}
@@ -60,7 +63,7 @@ const Hero: React.FC = () => {
               className="btn-primary inline-flex items-center gap-2 px-8 py-3 text-lg"
             >
               <FiMail size={20} />
-              Get In Touch
+              {t('hero.button')}
             </a>
             
             {/* <a

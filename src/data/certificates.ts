@@ -14,6 +14,7 @@ export interface Certificate {
   }
   
   export const certificates: Certificate[] = [
+    
     {
       id: 1,
       title: "Full Stack Web & App Development Bootcamp",
