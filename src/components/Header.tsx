@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
             className="flex flex-col items-start group transition-colors"
           >
             <div className="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-              {personalInfo.name.split(' ').map((name: string) => name[0]).join('')}
+              {personalInfo.name === 'Nahid Najafi' ? 'Na•N' : personalInfo.name.split(' ').map((name: string) => name[0]).join('')}
             </div>
             <div className="w-9 h-px bg-primary-500 my-1"></div>
             <div className="text-xxs text-gray-500 dark:text-gray-400 font-medium tracking-wide" style={{ fontSize: '0.5rem' }}>
