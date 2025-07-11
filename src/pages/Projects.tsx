@@ -27,8 +27,7 @@ const ProjectsPage: React.FC = () => {
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-xl text-gray-600 dark:text-gray-400 font-light max-w-3xl mx-auto leading-relaxed">
-              A comprehensive collection of my work showcasing full-stack development expertise, 
-              modern technologies, and innovative problem-solving approaches
+            A collection of my work showcasing full-stack development skills, modern technologies, and creative problem-solving approaches.
             </p>
           </div>
           
@@ -69,7 +68,11 @@ const ProjectsPage: React.FC = () => {
 
                   {/* Status and Duration Badges */}
                   <div className="absolute top-4 left-4 right-4 flex justify-between">
-                    <div className="flex items-center gap-1 px-3 py-1 bg-green-500/90 text-white text-xs font-medium rounded-full backdrop-blur-sm">
+                    <div className={`flex items-center gap-1 px-3 py-1 text-white text-xs font-medium rounded-full backdrop-blur-sm ${
+                    project.status === 'Completed' 
+                    ? 'bg-green-500/90'
+                    : project.status === 'in Progress' 
+                    ? 'bg-yellow-600/90' : 'bg-red-500/90'}`}> 
                       <FaCheckCircle className="w-3 h-3" />
                       <span>{project.status}</span>
                     </div>
