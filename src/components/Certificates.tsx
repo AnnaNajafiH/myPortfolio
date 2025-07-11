@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
-import { certificates } from '../data/portfolio';
+import { certificates } from '../data/certificates';
 
 const Certificates: React.FC = () => {
   return (
