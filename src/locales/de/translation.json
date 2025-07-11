@@ -1,0 +1,85 @@
+{
+  "header": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+"hero": {
+  "name": "Nahid Najafi",
+  "title": "Full Stack Entwickler",
+  "tagline": "Ideen in skalierbare digitale Erlebnisse verwandeln.",
+  "location": "Göttingen, Deutschland",
+  "button": "Kontakt"
+},
+  "aboutMe": {
+    "title": "Über mich",
+    "description": "Leidenschaftliche Full-Stack-Entwicklerin mit Erfahrung in modernen Webtechnologien. Ich liebe es, intuitive Benutzererlebnisse und robuste Backend-Systeme zu schaffen. Mit einer soliden Grundlage in JavaScript, TypeScript und Python löse ich gerne komplexe Probleme und baue skalierbare Lösungen.",
+  "about": {
+    "subject": "Von der Chemie zur Webentwicklung: Die Brücke zwischen Wissenschaft und Code",
+    "intro": "Hi, ich bin Nahid (Anna), eine Junior Full-Stack-Entwicklerin, die einen mutigen Sprung aus der Welt der Chemie und Wissenschaft in das schnelle Technologie-Universum gewagt hat, angetrieben von einer unaufhaltsamen Leidenschaft für Programmierung und Innovation.",
+    "background": "In den letzten anderthalb Jahren habe ich mich voll und ganz in die Webentwicklung vertieft, intensive Bootcamps und Kurse abgeschlossen, die mich befähigt haben, Full-Stack-Anwendungen mit modernen Technologien zu entwickeln. Ob bei der Gestaltung intuitiver, responsiver Benutzeroberflächen oder der Entwicklung sicherer Backend-APIs  ich freue mich, komplexe Ideen in nahtlose und ansprechende digitale Erlebnisse zu verwandeln.",
+    "passion": "Mein wissenschaftlicher Hintergrund hat mein analytisches Denken geschärft, und meine Liebe zum Programmieren treibt mich kontinuierlich an, zu lernen, zu wachsen und neue Herausforderungen mit Begeisterung anzunehmen. Ich bin leidenschaftlich darin, Kreativität mit Logik zu verbinden, um Ideen in kraftvolle digitale Lösungen zu verwandeln.",
+    "endWords": "Ich freue mich darauf, mich mit anderen Entwicklern und Fachleuten zu vernetzen. Melde dich gerne, wenn du zusammenarbeiten möchtest oder einfach nur über Technik plaudern willst!",
+    "technologies": "Technologien, mit denen ich arbeite",
+    "button": "Lass uns zusammenarbeiten"
+  }
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "languages": "Sprachen",
+    "frameworks": "Fraimworks",
+    "databases": "Datenbanken",
+    "tools": "Werkzeuge",
+    "other": "Andere",
+    "text1": "Die Werkzeuge und Technologien, die ich nutze, um Ideen zum Leben zu erwecken und außergewöhnliche digitale Erlebnisse zu schaffen",
+    "text2": "Stets am Lernen und Erkunden neuer Technologien",
+    "button": "Meine Projekte ansehen"
+
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "viewAll": "Alle Projekte ansehen",
+    "viewDetails": "Details ansehen",
+    "viewCode": "Code ansehen",
+    "liveSite": "Live-Seite",
+    "text1": "Eine Präsentation meiner neuesten Arbeiten, die meine Expertise in der Full-Stack-Entwicklung, modernen Frameworks und innovativen Lösungen demonstriert",
+    "text2": "Möchtest du mehr von meiner Arbeit sehen?",
+    "shortDescription": [
+  "Eine umfassende Full-Stack-E-Commerce-Plattform mit integrierten Zahlungsmethoden.",
+  "Eine moderne Full-Stack-Website, die Architekturprojekte mit klarem Design und nahtlosem Benutzererlebnis präsentiert.",
+  "Eine Web-App zur Verwaltung von öffentlichen Bücherregalen weltweit."
+]
+
+  },
+  "education": {
+    "title": "Studium & Weiterbildung"
+  },
+  "certificates": {
+    "title": "Zertifikate & Auszeichnungen",
+    "viewCertificate": "View Certificate"
+  },  
+
+  "contact": {
+    "title": "Kontakt",
+    "name": "Name",
+    "email": "E-Mail",
+    "location": "Ort",
+    "cityCountry": "Göttingen, Deutschland",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.",
+    "text1": "Lass uns in Kontakt treten",
+    "text2": "Ich bin jederzeit offen für neue Möglichkeiten, spannende Projekte oder einfach für einen Austausch über Technologie. Melde dich gern!",
+    "followMe": "Folge mir auf:"
+  },
+  "language": {
+    "select": "Sprache auswählen",
+    "en": "Englisch",
+    "de": "Deutsch"
+  },
+    "footer": {
+        "rightsReserved": "Alle Rechte vorbehalten."
+}
+}
