@@ -63,7 +63,7 @@ export const skills = {
     "Unit Testing",
     "Agile Methodologies",
     "Responsive Design",
-    "AI implementation"
+    "AI-powered features"
   ]
 };
 
@@ -71,9 +71,9 @@ export const projects = [
   {
     id: 1,
     name: "EasyShop",
-    shortDescription: "A comprehensive full-stack e-commerce platform with PayPal integration, featuring modern TypeScript development and production-ready architecture.",
-    description: "A Full-Stack e-commerce application built with modern web technologies, featuring a responsive React frontend with TypeScript and a robust Express.js backend. This comprehensive platform demonstrates advanced full-stack development, secure payment processing, and scalable architecture design for online retail solutions.",
-    detailedDescription: `EasyShop is a complete e-commerce solution that showcases modern full-stack development practices with enterprise-level features. The platform features a fully responsive React frontend built with TypeScript, Bootstrap, and Tailwind CSS, ensuring type safety, beautiful responsive design, and exceptional user experience across all devices.
+    shortDescription: "A comprehensive full-stack e-commerce platform with integrated payment methods.",
+    description: "A full-stack e-commerce application built with modern web technologies, featuring a responsive React frontend using TypeScript and a robust Express.js backend. This comprehensive platform showcases the entire purchasing process, including order management, address handling, payment methods, payment processing, and a purchase history.",
+    detailedDescription: `EasyShop is a complete e-commerce solution demonstrating modern full-stack development practices with many features. The platform includes a fully responsive React frontend built with TypeScript and Bootstrap, ensuring type safety and a beautiful, responsive design.
 
 The backend leverages Express.js with TypeScript and MongoDB, providing a robust and scalable API with advanced security features including rate limiting, input validation, CORS protection, and professional logging with Winston. The application implements secure user authentication with JWT tokens, comprehensive order management, and seamless PayPal payment integration.
 
@@ -91,8 +91,10 @@ Key architectural features include global state management using React Context a
         "Responsive Design System",
         "Admin Dashboard Features",
         "Global State Management",
+        "Dark Mode Support",
         "Rate Limiting & Security",
         "Professional Logging",
+        "SEO-Optimized Routing",
         "Docker Deployment Ready"
     ],
     challenges: [
@@ -101,8 +103,7 @@ Key architectural features include global state management using React Context a
         "Building real-time cart synchronization and updates",
         "Ensuring data consistency between frontend and backend",
         "Implementing comprehensive order management system",
-        "Creating production-ready security and error handling",
-        "Optimizing database performance with connection pooling",
+        // "Optimizing database performance with connection pooling",
         "Deploying with proper environment configuration"
     ],
     technologies: [
@@ -126,22 +127,30 @@ Key architectural features include global state management using React Context a
   {
     id: 2,
     name: "SStudio",
-    shortDescription: "A modern full-stack architecture website showcasing architectural projects with advanced design and seamless user experience.",
-    description: "A Full-Stack architecture portfolio platform built with modern web technologies, featuring a responsive React frontend and robust Node.js backend. This comprehensive application demonstrates advanced TypeScript development, cloud deployment, and modern UI/UX design principles for architectural showcases.",
+    shortDescription: "A modern full-stack website showcasing architectural projects with clean design and a seamless user experience.",
+    description: "A Full-Stack architecture portfolio platform built with modern web technologies, featuring a responsive React frontend and robust Node.js backend. This comprehensive application demonstrates modern UI/UX design principles for architectural showcases.",
     detailedDescription: `SStudio is a comprehensive architecture portfolio solution that showcases modern web development practices combined with elegant design presentation. The platform features a fully responsive React frontend built with TypeScript and Tailwind CSS, ensuring type safety, beautiful styling, and exceptional developer experience. The backend leverages Express.js and MongoDB to provide a robust and scalable API for project management.
   
   Key features include project categorization with advanced filtering, image gallery management, contact form integration, and a clean, professional interface designed specifically for architecture website. The application demonstrates full CRUD operations for project management, advanced state management with custom React hooks, and follows RESTful API design principles.
   
-  The project showcases my ability to work with modern JavaScript frameworks, implement responsive design systems, manage complex data relationships, integrate multimedia content, and deploy full-stack applications to cloud platforms with proper CORS configuration and environment management.`,
+  The project is secured with JWT (JSON Web Token) authentication, ensuring safe and authorized access to project management features. This demonstrates my ability to implement secure full-stack authentication flows alongside modern JavaScript frameworks, responsive design, and scalable backend services.`,
     features: [
       "Advanced Category Filtering", 
       "Image Gallery & Media Management",
       "Contact Form Integration",
       "Responsive Design System",
+      "Dark Mode Support",
       "Search & Filter Functionality",
       "SEO-Optimized Routing",
       "Cloud Storage Integration",
-      "Professional UI/UX Design"
+      "Professional UI/UX Design",
+      "Protected Routes & Middleware",
+      "Responsive Design System",
+      "Admin Dashboard Features",
+      "Global State Management",
+      "Rate Limiting & Security",
+      "Professional Logging",
+      "Docker Deployment Ready"
     ],
     challenges: [
       "Implementing complex filtering and search functionality",
@@ -156,10 +165,8 @@ Key architectural features include global state management using React Context a
       "Express.js",
       "MongoDB",
       "Tailwind CSS",
-      "Vite",
-      "React Router",
-      "Axios",
-      "Node.js"
+      "JWT",
+      "Docker",
     ],
     githubUrl: "https://github.com/AnnaNajafiH/SabaStudio",
     liveUrl: "https://sabastudio-frontend.onrender.com/",
@@ -186,7 +193,8 @@ The application implements secure user authentication using JWT tokens and provi
       "Community Reviews & Ratings",
       "Advanced Search & Filtering",
       "Mobile-Responsive Design",
-      "Admin Management Tools"
+      "Admin Management Tools", 
+      "Dark Mode Support"
     ],
     challenges: [
       "Integrating AI image generation APIs",
