@@ -1,15 +1,17 @@
 import React from 'react';
 import { FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
 import { certificates } from '../data/certificates';
+import { useTranslation } from 'react-i18next';
 
 const Certificates: React.FC = () => {
+    const { t } = useTranslation();
   return (
     <section id="certificates" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
             <FaCertificate className="mr-3 text-blue-500" />
-            Certificates & Achievements
+            {t('certificates.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
         </div>

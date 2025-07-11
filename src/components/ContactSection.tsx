@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { personalInfo } from '../data/portfolio';
 import { FaEnvelope, FaGithub, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -113,7 +115,7 @@ const ContactSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-white mb-6">
-            Get In Touch
+            {t('contact.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-12 rounded-full"></div>
 
@@ -122,10 +124,10 @@ const ContactSection: React.FC = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
-                  Let's Connect
+                  {t('contact.text1')}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                  I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!
+                  {t('contact.text2')}
                 </p>
               </div>
               
@@ -150,15 +152,15 @@ const ContactSection: React.FC = () => {
                     <FaMapMarkerAlt className="text-primary-600 dark:text-primary-400" />
                   </div>
                   <div>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">Location</p>
-                    <p className="text-gray-800 dark:text-white font-medium">{personalInfo.location}</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">{t('contact.location')}</p>
+                    <p className="text-gray-800 dark:text-white font-medium">{t('contact.cityCountry')}</p>
                   </div>
                 </div>
               </div>
               
               <div>
                 <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-                  Follow Me
+                  {t('contact.followMe')}
                 </h4>
                 <div className="flex gap-4">
                   <a
@@ -184,7 +186,7 @@ const ContactSection: React.FC = () => {
             {/* Contact Form */}
             <div className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-6">
-                Send a Message
+                {t('contact.send')}
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -237,7 +239,7 @@ const ContactSection: React.FC = () => {
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Message
+                    {t('contact.message')}
                   </label>
                   <textarea
                     id="message"
@@ -266,7 +268,7 @@ const ContactSection: React.FC = () => {
                       Sending...
                     </>
                   ) : (
-                    'Send Message'
+                    t('contact.send')
                   )}
                 </button>
               </form>

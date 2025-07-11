@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/portfolio';
 import { 
@@ -10,6 +11,11 @@ import {
 } from 'react-icons/fa';
 
 const ProjectsSection: React.FC = () => {
+  const { t } = useTranslation();
+
+  // Display only first 3 projects on home page
+  const displayedProjects = projects.slice(0, 3);
+
   return (
     <section
       id="projects"
@@ -20,11 +26,11 @@ const ProjectsSection: React.FC = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
-              Featured Projects
+              {t('projects.title')}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-xl text-gray-600 dark:text-gray-400 font-light max-w-2xl mx-auto leading-relaxed">
-              A showcase of my latest work, demonstrating expertise in full-stack development, modern frameworks, and innovative solutions
+              {t('projects.text1')}
             </p>
           </div>
 
@@ -69,7 +75,7 @@ const ProjectsSection: React.FC = () => {
                       className="px-8 py-3 bg-white text-gray-900 font-medium rounded-full hover:bg-gray-100 transition-colors duration-200 transform scale-95 group-hover:scale-100"
                       style={{ transitionDelay: '100ms' }}
                     >
-                      <span>View Details</span>
+                      <span>{t('projects.viewDetails')}</span>
                     </Link>
                   </div>
                 </div>
@@ -102,7 +108,7 @@ const ProjectsSection: React.FC = () => {
                   </div>
 
                   <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2 leading-relaxed">
-                    {project.shortDescription}
+                    {(project.shortDescription)}
                   </p>
 
                   {/* Technologies */}
@@ -123,31 +129,29 @@ const ProjectsSection: React.FC = () => {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="grid grid-cols-3 gap-3">
-                    <Link
+                  <div className="flex justify-end flex-wrap gap-1">
+                    {/* <Link
                       to={`/projects/${project.id}`}
                       className="flex items-center justify-center gap-2 px-3 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-all duration-200 text-sm font-medium group/btn"
                     >
                       <span>Details</span>
                       <FaArrowRight className="w-3 h-3 group-hover/btn:translate-x-1 transition-transform duration-200" />
-                    </Link>
+                    </Link> */}
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 px-3 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors text-sm font-medium"
+                      className="flex items-center justify-center gap-2 px-3 py-2  text-gray-700 hover:text-primary-600 transition-colors text-sm font-medium"
                     >
-                      <FaGithub className="w-3 h-3" />
-                      <span>Code</span>
+                      <FaGithub className="w-6 h-6" />
                     </a>
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 px-3 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors text-sm font-medium"
+                      className="flex items-center justify-center gap-2 px-3 py-2  text-primary-700 hover:text-gray-600 transition-colors text-sm font-medium"
                     >
-                      <FaExternalLinkAlt className="w-3 h-3" />
-                      <span>Live</span>
+                      <FaExternalLinkAlt className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
@@ -161,14 +165,13 @@ const ProjectsSection: React.FC = () => {
           {/* Bottom CTA */}
           <div className="text-center mt-16">
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-              Want to see more of my work?
+              {t('projects.text2')}
             </p>
             <Link
               to="/projects"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary-500 to-blue-500 text-white font-medium rounded-full hover:from-primary-600 hover:to-blue-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              <span>View All Projects</span>
-              <FaArrowRight className="w-4 h-4" />
+              {t('projects.viewAll')} <FaArrowRight />
             </Link>
           </div>
         </div>

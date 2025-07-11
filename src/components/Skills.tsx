@@ -1,35 +1,38 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { skills } from '../data/portfolio';
 import { FaCode, FaServer, FaDatabase, FaTools, FaCogs } from 'react-icons/fa';
 
 const Skills: React.FC = () => {
+  const { t } = useTranslation();
+
   const skillCategories = [
     { 
-      name: 'Languages', 
+      name: t('skills.languages'), 
       items: skills.languages,
       icon: <FaCode className="text-2xl" />,
       color: 'from-blue-500 to-purple-600'
     },
     { 
-      name: 'Frameworks', 
+      name: t('skills.frameworks'),
       items: skills.frameworks,
       icon: <FaServer className="text-2xl" />,
       color: 'from-green-500 to-teal-600'
     },
     { 
-      name: 'Databases', 
+      name: t('skills.databases'),
       items: skills.databases,
       icon: <FaDatabase className="text-2xl" />,
       color: 'from-orange-500 to-red-600'
     },
     { 
-      name: 'Tools', 
+      name: t('skills.tools'), 
       items: skills.tools,
       icon: <FaTools className="text-2xl" />,
       color: 'from-purple-500 to-pink-600'
     },
     { 
-      name: 'Other', 
+      name: t('skills.other'), 
       items: skills.other,
       icon: <FaCogs className="text-2xl" />,
       color: 'from-indigo-500 to-blue-600'
@@ -37,17 +40,17 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
-              Skills & Technologies
+              {t('skills.title')}
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="text-xl text-gray-600 dark:text-gray-400 font-light max-w-2xl mx-auto leading-relaxed">
-              The tools and technologies I use to bring ideas to life and create exceptional digital experiences
+              {t('skills.text1')}
             </p>
           </div>
           
@@ -95,7 +98,7 @@ const Skills: React.FC = () => {
           {/* Bottom CTA */}
           <div className="text-center mt-16">
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-              Always learning and exploring new technologies
+              {t('skills.text2')}
             </p>
             <a 
               href="#projects"
@@ -105,7 +108,7 @@ const Skills: React.FC = () => {
                 document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span>View My Projects</span>
+              <span>{t('skills.button')}</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

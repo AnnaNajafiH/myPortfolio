@@ -2,9 +2,12 @@ import React from 'react';
 import { personalInfo } from '../data/portfolio';
 import profileImage2 from '../assets/images/Anna2.jpg'; 
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
   const handleContactClick = (e: React.MouseEvent) => {
     e.preventDefault();
     navigate('/#contact');
@@ -15,7 +18,7 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-white mb-6">
-            About Me
+            {t('aboutMe.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-blue-500 mx-auto mb-6 rounded-full"></div>
           <div className="flex flex-col md:grid md:grid-cols-2 gap-12 items-start">
@@ -23,7 +26,7 @@ const About: React.FC = () => {
               {/* Subject/Headline */}
               <div className="space-y-4">
                 <h3 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400">
-                  {personalInfo.about.subject}    
+                  {t('aboutMe.about.subject')}    
                 </h3>
                 <div className="w-16 h-1 bg-gradient-to-r from-primary-500 to-blue-500 rounded-full"></div>
               </div>
@@ -31,18 +34,18 @@ const About: React.FC = () => {
               {/* Introduction */}
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-medium text-justify">
-                  {personalInfo.about.intro}
+                  {t('aboutMe.about.intro')}
                 </p>
                 
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-                  {personalInfo.about.background}
+                  {t('aboutMe.about.background')}
                 </p>
                 
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-                  {personalInfo.about.passion}
+                  {t('aboutMe.about.passion')}
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
-                  {personalInfo.about.endWords}
+                  {t('aboutMe.about.endWords')}
                 </p>
               </div>
 
@@ -61,7 +64,7 @@ const About: React.FC = () => {
               {/* Technologies */}
               <div className="space-y-4">
                 <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
-                  Technologies I Work With
+                  {t('aboutMe.about.technologies')}
                 </h4>
                 <div className="flex flex-wrap gap-3">
                   {personalInfo.about.technologies.map((tech: string, index: number) => (
@@ -82,7 +85,7 @@ const About: React.FC = () => {
                   onClick={handleContactClick}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  <span>Let's Work Together</span>
+                  <span>{t('aboutMe.about.button')}</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
