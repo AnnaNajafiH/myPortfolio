@@ -14,7 +14,6 @@ const ProjectsSection: React.FC = () => {
   const { t } = useTranslation();
 
   // Display only first 3 projects on home page
-  const displayedProjects = projects.slice(0, 3);
 
   return (
     <section
