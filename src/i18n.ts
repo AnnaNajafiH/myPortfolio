@@ -12,7 +12,7 @@ i18n
       loadPath: '/locales/{{lng}}/{{ns}}.json',  //Load translation files from /public/locales/{language}/{namespace}.json
     },
     fallbackLng: 'en',   //Fallback language if the user's language is not available(default language).
-    supportedLngs: ['en', 'de'],  
+    supportedLngs: ['en', 'de', 'fa', 'es'],  //Supported languages in your app.
     interpolation: {
       escapeValue: false,   //No need to escape text, since React does it already.
     },

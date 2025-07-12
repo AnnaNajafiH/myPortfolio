@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
           
           {/* Main Content */}
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4">
-            {personalInfo.name}
+            {t('hero.name')}
           </h1>
           
           <h2 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-6">
