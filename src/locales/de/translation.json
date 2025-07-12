@@ -77,7 +77,8 @@
   "language": {
     "select": "Sprache auswählen",
     "en": "Englisch",
-    "de": "Deutsch"
+    "de": "Deutsch",
+    "fa": "Persisch"
   },
     "footer": {
         "rightsReserved": "Alle Rechte vorbehalten."

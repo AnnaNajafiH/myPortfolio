@@ -78,7 +78,8 @@
   "language": {
     "select": "Select Language",
     "en": "English",
-    "de": "German"
+    "de": "German",
+    "fa": "Persian"
   },
     "footer": {
         "rightsReserved": "All rights reserved."
