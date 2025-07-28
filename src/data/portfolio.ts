@@ -4,6 +4,8 @@ import easyShopImage3 from '../assets/images/easyShop3.jpg';
 import easyShopImage4 from '../assets/images/easyShop4.jpg';
 import bookLookImage from '../assets/images/booklook2.png';
 import SabaStudioImage from '../assets/images/sabaStudio.jpg';
+import molarMassImage from '../assets/images/molarMassImage.jpg';
+import molarMassImage1 from '../assets/images/molarMassImage1.jpg';
 
 
 
@@ -68,61 +70,60 @@ export const skills = {
 
 export const projects = [
   {
-    id: 1,
-    name: "EasyShop",
-    shortDescription: "A comprehensive full-stack e-commerce platform with integrated payment methods.",
-    description: "A full-stack e-commerce application built with modern web technologies, featuring a responsive React frontend using TypeScript and a robust Express.js backend. This comprehensive platform showcases the entire purchasing process, including order management, address handling, payment methods, payment processing, and a purchase history.",
-    detailedDescription: `EasyShop is a complete e-commerce solution demonstrating modern full-stack development practices with many features. The platform includes a fully responsive React frontend built with TypeScript and Bootstrap, ensuring type safety and a beautiful, responsive design.
+  id: 1, // or the next available ID in your data.ts file
+  name: "ChemCalc...",
+  shortDescription: "A full-stack chemistry tool for calculating molar mass and retrieving chemical properties.",
+  description: "A modern chemistry application built with React, TypeScript, and Python FastAPI that calculates the molar mass of chemical compounds, retrieves detailed chemical properties from PubChem, and maintains a searchable formula history using PostgreSQL/MySQL.",
+  detailedDescription: `The Molar Mass Calculator is a professional-grade chemistry tool designed for students, educators, and researchers. It combines a sleek React frontend with a powerful Python backend to deliver accurate chemical calculations and comprehensive property data.
 
-The backend leverages Express.js with TypeScript and MongoDB, providing a robust and scalable API with advanced security features including rate limiting, input validation, CORS protection, and professional logging with Winston. The application implements secure user authentication with JWT tokens, comprehensive order management, and seamless PayPal payment integration.
+The application features robust formula parsing with proper error handling, real-time validation, and automatic retrieval of compound data from the PubChem API. Users can calculate molar masses instantly, view molecular structures, and access key chemical properties including state at room temperature, boiling/melting points, density, IUPAC names, and hazard classifications.
 
-Key architectural features include global state management using React Context and useReducer hooks, advanced error handling with custom middleware, database optimization with connection pooling, and production-ready deployment configuration with Docker support. The platform demonstrates CRUD operations for product and order management, real-time cart updates, protected routes, and comprehensive order tracking.
-`,
-    features: [
-        "User Authentication & Authorization",
-        "Product Catalog with Filtering",
-        "Shopping Cart Management", 
-        "PayPal Payment Integration",
-        "Order Management System",
-        "Order History & Tracking",
-        "Real-time Cart Updates",
-        "Protected Routes & Middleware",
-        "Responsive Design System",
-        "Admin Dashboard Features",
-        "Global State Management",
-        "Dark Mode Support",
-        "Rate Limiting & Security",
-        "Professional Logging",
-        "SEO-Optimized Routing",
-        "Docker Deployment Ready"
-    ],
-    challenges: [
-        // "Implementing secure PayPal payment processing workflow",
-        // "Managing complex global state across multiple components",
-        // "Building real-time cart synchronization and updates",
-        // "Ensuring data consistency between frontend and backend",
-        // "Implementing comprehensive order management system",
-        // // "Optimizing database performance with connection pooling",
-        // "Deploying with proper environment configuration"
-    ],
-    technologies: [
-        "TypeScript",
-        "React",
-        "Express.js", 
-        "MongoDB",
-        "Bootstrap",
-        "Tailwind CSS",
-        "PayPal API",
-        "JWT Authentication",
-        "Docker",
-      ],
-    githubUrl: "https://github.com/AnnaNajafiH/EasyShop",
-    liveUrl: "https://easyshop-frontend-u9wj.onrender.com/",
-    image: easyShopImage2,
-    gallery: [easyShopImage, easyShopImage3, easyShopImage4 ], // You can add more images later
-    status: "In Progress",
-    duration: "3 weeks"
-  },
+The project implements a responsive design that works seamlessly across desktop and mobile devices, with special attention to handling long IUPAC names and complex chemical data. A complete formula history system allows users to save, edit, and reuse previous calculations.
+
+The backend uses FastAPI with SQLAlchemy ORM, supporting both PostgreSQL (cloud) and MySQL (local) databases. The entire application is containerized with Docker for consistent development and deployment across environments. The deployment configuration supports both local development and cloud hosting on platforms like Render and Netlify.`,
+  features: [
+    "Chemical Formula Parsing & Validation",
+    "Accurate Molar Mass Calculation",
+    "PubChem API Integration",
+    "Molecular Structure Visualization",
+    "Chemical Property Lookup",
+    "Formula History Management",
+    "Dark/Light Mode Support",
+    "Responsive Mobile Design",
+    "Cross-Database Support (PostgreSQL/MySQL)",
+    "Docker Containerization",
+    "Cloud Deployment Configuration",
+    "Formula Editing & Reuse"
+  ],
+  challenges: [
+    "Developing a robust chemical formula parser with proper validation",
+    "Creating a responsive UI for complex chemical data and long IUPAC names",
+    "Implementing database flexibility to support both cloud and local environments",
+    "Ensuring proper error handling in both frontend and backend components",
+    "Integrating with external chemical databases via PubChem API",
+    "Setting up containerized deployment across different environments"
+  ],
+  technologies: [
+    "React",
+    "TypeScript",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "MySQL",
+    "SQLAlchemy",
+    "Docker",
+    "Tailwind CSS",
+    "PubChem API",
+    "Render",
+    "Netlify"
+  ],
+  githubUrl: "https://github.com/AnnaNajafiH/ChemCal",
+  liveUrl: "https://chemcal.netlify.app/", 
+  image: molarMassImage, 
+  gallery: [molarMassImage1], 
+  status: "In Progress",
+  duration: "1 week"
+},
   {
     id: 2,
     name: "SStudio",
@@ -216,6 +217,62 @@ Beyond its intelligent features, BookLook ensures secure access with JWT-based a
     gallery: [bookLookImage], // You can add more images later
     status: "Completed",
     duration: "1 months"
+  },
+  {
+    id: 4,
+    name: "EasyShop",
+    shortDescription: "A comprehensive full-stack e-commerce platform with integrated payment methods.",
+    description: "A full-stack e-commerce application built with modern web technologies, featuring a responsive React frontend using TypeScript and a robust Express.js backend. This comprehensive platform showcases the entire purchasing process, including order management, address handling, payment methods, payment processing, and a purchase history.",
+    detailedDescription: `EasyShop is a complete e-commerce solution demonstrating modern full-stack development practices with many features. The platform includes a fully responsive React frontend built with TypeScript and Bootstrap, ensuring type safety and a beautiful, responsive design.
+
+The backend leverages Express.js with TypeScript and MongoDB, providing a robust and scalable API with advanced security features including rate limiting, input validation, CORS protection, and professional logging with Winston. The application implements secure user authentication with JWT tokens, comprehensive order management, and seamless PayPal payment integration.
+
+Key architectural features include global state management using React Context and useReducer hooks, advanced error handling with custom middleware, database optimization with connection pooling, and production-ready deployment configuration with Docker support. The platform demonstrates CRUD operations for product and order management, real-time cart updates, protected routes, and comprehensive order tracking.
+`,
+    features: [
+        "User Authentication & Authorization",
+        "Product Catalog with Filtering",
+        "Shopping Cart Management", 
+        "PayPal Payment Integration",
+        "Order Management System",
+        "Order History & Tracking",
+        "Real-time Cart Updates",
+        "Protected Routes & Middleware",
+        "Responsive Design System",
+        "Admin Dashboard Features",
+        "Global State Management",
+        "Dark Mode Support",
+        "Rate Limiting & Security",
+        "Professional Logging",
+        "SEO-Optimized Routing",
+        "Docker Deployment Ready"
+    ],
+    challenges: [
+        // "Implementing secure PayPal payment processing workflow",
+        // "Managing complex global state across multiple components",
+        // "Building real-time cart synchronization and updates",
+        // "Ensuring data consistency between frontend and backend",
+        // "Implementing comprehensive order management system",
+        // // "Optimizing database performance with connection pooling",
+        // "Deploying with proper environment configuration"
+    ],
+    technologies: [
+        "TypeScript",
+        "React",
+        "Express.js", 
+        "MongoDB",
+        "Bootstrap",
+        "Tailwind CSS",
+        "PayPal API",
+        "JWT Authentication",
+        "Docker",
+      ],
+    githubUrl: "https://github.com/AnnaNajafiH/EasyShop",
+    liveUrl: "https://easyshop-frontend-u9wj.onrender.com/",
+    image: easyShopImage2,
+    gallery: [easyShopImage, easyShopImage3, easyShopImage4 ], // You can add more images later
+    status: "In Progress",
+    duration: "3 weeks"
   },
 //   {
 //     id: 4,

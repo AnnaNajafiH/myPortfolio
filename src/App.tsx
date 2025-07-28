@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
   // Update HTML lang attribute when language changes
   React.useEffect(() => {
-    document.documentElement.lang = i18n.language;  //It updates the <html> tag in your app like this:  <html lang="en">
+    document.documentElement.lang = i18n.language;  
   }, [i18n.language]);
 
   return (
