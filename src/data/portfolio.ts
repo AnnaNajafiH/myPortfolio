@@ -113,9 +113,7 @@ The backend uses FastAPI with SQLAlchemy ORM, supporting both PostgreSQL (cloud)
     "SQLAlchemy",
     "Docker",
     "Tailwind CSS",
-    "PubChem API",
-    "Render",
-    "Netlify"
+    "PubChem API"
   ],
   githubUrl: "https://github.com/AnnaNajafiH/ChemCal",
   liveUrl: "https://chemcal.netlify.app/", 

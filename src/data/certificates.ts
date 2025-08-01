@@ -2,6 +2,7 @@ import WBSImage from '../assets/images/WBS-School.jpg';
 import CS50PImage from '../assets/images/CS50P.png';
 import HackfestivalImage from '../assets/images/Hackfestival2024.jpg';
 import MentalHealthHackathonImage from '../assets/images/MentalHealth_Hackathon.jpg';
+import devOpsImage from '../assets/images/DevOps.jpg';
 
 export interface Certificate {
     id: number;
@@ -33,8 +34,18 @@ export interface Certificate {
       image: CS50PImage,
       link: "https://cs50.harvard.edu/python/2022/"
     },
-    {
+      {
       id: 3,
+      title: "DevOps Foundations: CI/CD",
+      organization: "LinkedIn Learning",
+      date: "July 2025",
+      description: "A course exploring CI/CD principles, tools, and best practices to streamline software development and deployment workflows using DevOps methodologies.",
+      image: devOpsImage,
+      link: "https://www.linkedin.com/learning/certificates/85cdb20b0f9e7799ced067eca6973350153849e794a4e39ca40004c0847dee51?trk=share_certificate"
+  
+    },
+    {
+      id: 4,
       title: "Winner - Hackfestival 2024",
       organization: "The Hackathon Company",
       date: "March 2024",
@@ -43,7 +54,7 @@ export interface Certificate {
       link: "https://www.roche.de/presse/news/innovationskraft-fuer-nachhaltigkeit-roche-auf-dem-hackfestival-mannheim#70b9d713-8821-4558-aabb-2b53cf68cd80-download-anchor"
     },
     {
-      id: 4,
+      id: 5,
       title: "Mental Health Hackathon 2024",
       organization: "dgppn - Deutsche Gesellschaft für Psychiatrie und Psychotherapie, Psychosomatik und Nervenheilkunde",
       date: "November 2024",

@@ -214,7 +214,7 @@ const ProjectDetail: React.FC = () => {
                   <h4 className="font-semibold text-gray-800 dark:text-white mb-2 text-sm md:text-base">Backend</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.filter(tech => 
-                      ['Express.js', 'MongoDB', 'JWT', 'PayPal SDK'].includes(tech)
+                      ['Express.js', 'MongoDB', 'JWT', 'PayPal SDK','PostgreSQL/MySQL', 'Docker','Psycopg2/PyMySQL','Python FastAPI', 'Python', 'FastAPI', 'SQLAlchemy'].includes(tech)
                     ).map((tech, index) => (
                       <span key={index} className="px-2 py-1 md:px-3 md:py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs md:text-sm">
                         {tech}
