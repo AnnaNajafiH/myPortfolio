@@ -2,7 +2,7 @@ import WBSImage from '../assets/images/WBS-School.jpg';
 import CS50PImage from '../assets/images/CS50P.png';
 import HackfestivalImage from '../assets/images/Hackfestival2024.jpg';
 import MentalHealthHackathonImage from '../assets/images/MentalHealth_Hackathon.jpg';
-import devOpsImage from '../assets/images/DevOps.jpg';
+import devOpsImage from '../assets/images/devOps.jpg';
 
 export interface Certificate {
     id: number;
