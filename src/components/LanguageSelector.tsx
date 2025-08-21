@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { IoLanguage } from 'react-icons/io5';
+import ReactCountryFlag from 'react-country-flag';
 
 
 type SupportedLanguage = 'en' | 'de' | 'fa' ;
@@ -9,10 +9,10 @@ type SupportedLanguage = 'en' | 'de' | 'fa' ;
 const LanguageSelector: React.FC = () => {
   const { i18n, t } = useTranslation();
 
-  const languageMap: Record<SupportedLanguage, string> = {
-    en: 'EN',
-    de: 'DE',
-    fa: 'FA',
+  const languageMap: Record<SupportedLanguage, { code: string; countryCode: string }> = {
+    en: { code: 'EN', countryCode: 'US' }, // or 'GB' for UK
+    de: { code: 'DE', countryCode: 'DE' },
+    fa: { code: 'FA', countryCode: 'IR' },
   };
 
   const isSupportedLanguage = (lang: string): lang is SupportedLanguage => {
@@ -34,8 +34,12 @@ const LanguageSelector: React.FC = () => {
         className="flex items-center space-x-1 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400"
         aria-label={t('language.select')}
       >
-        <IoLanguage className="w-5 h-5" />
-        <span className="text-sm">{languageMap[currentLanguage]}</span>
+        <ReactCountryFlag 
+          countryCode={languageMap[currentLanguage].countryCode}
+          svg
+          style={{ width: '20px', height: '15px' }}
+        />
+        <span className="text-sm">{languageMap[currentLanguage].code}</span>
         {/* <span className="text-sm">{i18n.language === 'de' ? 'DE' : i18n.language === 'en'? 'EN': 'FA'}</span> */}
       </button>
       
@@ -45,14 +49,19 @@ const LanguageSelector: React.FC = () => {
           <button
             key={lang}
           onClick={() => changeLanguage(lang)}
-            className={`block px-4 py-2 text-sm w-full text-left ${
+            className={`flex items-center space-x-2 px-4 py-2 text-sm w-full text-left ${
               i18n.language === lang
                 ? 'text-primary-500 dark:text-primary-400 bg-gray-100 dark:bg-gray-700 text-xs md:text-sm'
                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700, text-xs md:text-sm'
             }`}
             role="menuitem"
           >
-            {t(`language.${lang}`)}
+            <ReactCountryFlag 
+              countryCode={languageMap[lang].countryCode}
+              svg
+              style={{ width: '15px', height: '10px' }}
+            />
+            <span>{t(`language.${lang}`)}</span>
           </button>
 
           ))} 

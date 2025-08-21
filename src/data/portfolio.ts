@@ -6,6 +6,7 @@ import bookLookImage from '../assets/images/booklook2.png';
 import SabaStudioImage from '../assets/images/sabaStudio.jpg';
 import molarMassImage from '../assets/images/molarMassImage.jpg';
 import molarMassImage1 from '../assets/images/molarMassImage1.jpg';
+import pokemonImage from '../assets/images/pokemon1.png';
 
 
 
@@ -272,41 +273,41 @@ Key architectural features include global state management using React Context a
     status: "In Progress",
     duration: "3 weeks"
   },
-//   {
-//     id: 4,
-//     name: "Pokémon Play",
-//     shortDescription: "An interactive Pokémon battle game with comprehensive Pokédex functionality.",
-//     description: "An engaging Pokémon-themed application featuring battle mechanics, Pokédex exploration, and responsive design.",
-//     detailedDescription: `Pokémon Play is an interactive web application that brings the beloved Pokémon universe to life through modern web technologies. Built with React and featuring a sleek Tailwind CSS design, this application provides users with an immersive Pokémon experience.
+  {
+    id: 5,
+    name: "Pokémon Play",
+    shortDescription: "An interactive Pokémon battle game with comprehensive Pokédex functionality.",
+    description: "An engaging Pokémon-themed application featuring battle mechanics, Pokédex exploration, and responsive design.",
+    detailedDescription: `Pokémon Play is an interactive web application that brings the beloved Pokémon universe to life through modern web technologies. Built with React and featuring a sleek Tailwind CSS design, this application provides users with an immersive Pokémon experience.
 
-// The application features a comprehensive Pokédex with detailed information about various Pokémon species, including stats, abilities, and evolution chains. Users can engage in simulated battles, explore different Pokémon types, and track their progress through secure user authentication.
+The application features a comprehensive Pokédex with detailed information about various Pokémon species, including stats, abilities, and evolution chains. Users can engage in simulated battles, explore different Pokémon types, and track their progress through secure user authentication.
 
-// The project demonstrates proficiency in API integration, state management, and creating engaging user interfaces. The responsive design ensures optimal performance across all devices, while the Express.js backend provides robust data management and user session handling.`,
-//     features: [
-//       "Interactive Pokémon Battles",
-//       "Comprehensive Pokédex",
-//       "User Progress Tracking",
-//       "Pokémon Statistics Display",
-//       "Type Effectiveness Calculator",
-//       "Responsive Game Interface",
-//       "User Authentication",
-//       "Battle History & Analytics"
-//     ],
-//     challenges: [
-//       "Implementing complex battle mechanics",
-//       "Managing large datasets of Pokémon information",
-//       "Creating smooth animations and transitions",
-//       "Optimizing performance for mobile devices",
-//       "Balancing game mechanics for fair play"
-//     ],
-//     technologies: ["JavaScript", "React", "Express.js", "Tailwind CSS", "JWT"],
-//     githubUrl: "https://github.com/yourusername/pokemon-play",
-//     liveUrl: "https://wd51-pokebattle.netlify.app/pokedex",
-//     image: pokemonImage,
-//     gallery: [pokemonImage], // You can add more images later
-//     status: "Completed",
-//     duration: "2 weeks"
-//   },
+The project demonstrates proficiency in API integration, state management, and creating engaging user interfaces. The responsive design ensures optimal performance across all devices, while the Express.js backend provides robust data management and user session handling.`,
+    features: [
+      "Interactive Pokémon Battles",
+      "Comprehensive Pokédex",
+      "User Progress Tracking",
+      "Pokémon Statistics Display",
+      "Type Effectiveness Calculator",
+      "Responsive Game Interface",
+      "User Authentication",
+      "Battle History & Analytics"
+    ],
+    challenges: [
+      "Implementing complex battle mechanics",
+      "Managing large datasets of Pokémon information",
+      "Creating smooth animations and transitions",
+      "Optimizing performance for mobile devices",
+      "Balancing game mechanics for fair play"
+    ],
+    technologies: ["JavaScript", "React", "Express.js", "Tailwind CSS", "JWT"],
+    githubUrl: "https://github.com/AnnaNajafiH/WD51-pokeFront",
+    liveUrl: "https://wd51-pokebattle.netlify.app/pokedex",
+    image: pokemonImage,
+    gallery: [pokemonImage], // You can add more images later
+    status: "Completed",
+    duration: "2 weeks"
+  },
 //   {
 //     id: 5,
 //     name: "OnlinShop",

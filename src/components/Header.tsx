@@ -69,10 +69,10 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
               className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
               aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
             >
-              {isDarkMode ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
+              {isDarkMode ? <FaSun className="w-5 h-5 text-yellow-200 hover:text-blue-400" /> : <FaMoon className="w-5 h-5" />}
             </button>
 
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 border-l border-gray-400 dark:border-gray-700 pl-4">
               <a
                 href={personalInfo.github}
                 target="_blank"
@@ -86,7 +86,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, toggleDarkMode }) => {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                className="text-primary-600 dark:text-primary-300 hover:text-gray-600 dark:hover:text-gray-400 transition-colors"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin className="w-5 h-5" />
