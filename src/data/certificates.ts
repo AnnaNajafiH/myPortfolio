@@ -21,7 +21,7 @@ export interface Certificate {
       title: "Full Stack Web & App Development Bootcamp",
       organization: "WBS Coding School",
       date: "April - August 2024",
-      description: "17-week intensive bootcamp covering full stack web development, including React, Node.js, JavaScript, and more.",
+      description: "17-week intensive bootcamp covering full stack web development, including JavaScript, React, Node.js, Express.js, Databases, Restfull APIs, AI Integration and more.",
       image: WBSImage,
       link: "https://www.wbscodingschool.com/web-app-development-bootcamp/"
     },

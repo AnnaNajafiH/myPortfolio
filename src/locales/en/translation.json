@@ -61,6 +61,28 @@
     "title": "Certificates & Achievements",
     "viewCertificate": "View Certificate"
   },
+  "certificatesList": {
+    "1": {
+      "title": "Full Stack Web & App Development Bootcamp",
+      "description": "17-week intensive bootcamp covering full stack web development, including JavaScript, React, Node.js, Express.js, Databases, Restfull APIs, AI Integration and more."
+    },
+    "2": {
+      "title": "CS50's Introduction to Programming with Python",
+      "description": "Comprehensive course covering Python programming fundamentals, data structures, and algorithmic thinking."
+    },
+    "3": {
+      "title": "DevOps Foundations: CI/CD",
+      "description": "A course exploring CI/CD principles, tools, and best practices to streamline software development and deployment workflows using DevOps methodologies."
+    },
+    "4": {
+      "title": "Winner - Hackfestival 2024",
+      "description": "Winner of the Roche Company Challenge at the Hackfestival 2024 in Mannheim, Germany, with a gamified web app that enables employees to track and reduce their individual CO₂ footprint through personalized challenges and workplace engagement."
+    },
+    "5": {
+      "title": "Mental Health Hackathon 2024",
+      "description":  "a digital mental health platform that promotes the acceptance of digital solutions by addressing language barriers and enhancing accessibility."
+    }
+  },
   "contact": {
     "title": "Contact Me",
     "name": "Name",

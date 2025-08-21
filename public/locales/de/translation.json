@@ -57,7 +57,29 @@
   },
   "certificates": {
     "title": "Zertifikate & Auszeichnungen",
-    "viewCertificate": "View Certificate"
+    "viewCertificate": "Zertifikat ansehen"
+  },
+  "certificatesList": {
+    "1": {
+      "title": "Full Stack Web & App Development Bootcamp",
+      "description": "17-wöchiges intensives Bootcamp für Full-Stack-Webentwicklung, einschließlich JavaScript, React, Node.js, Express.js, Datenbanken, RESTful APIs, KI-Integration und mehr."
+    },
+    "2": {
+      "title": "CS50's Introduction to Programming with Python",
+      "description": "Umfassender Kurs über Python-Programmiergrundlagen, Datenstrukturen und algorithmisches Denken."
+    },
+    "3": {
+      "title": "DevOps Foundations: CI/CD",
+      "description": "Ein Kurs über CI/CD-Prinzipien, Tools und bewährte Praktiken zur Optimierung von Softwareentwicklung und Bereitstellungsworkflows mit DevOps-Methoden."
+    },
+    "4": {
+      "title": "Gewinner - Hackfestival 2024",
+      "description": "Gewinner der Roche Company Challenge beim Hackfestival 2024 in Mannheim, Deutschland, mit einer gamifizierten Web-App, die Mitarbeitern ermöglicht, ihren individuellen CO₂-Fußabdruck durch personalisierte Herausforderungen und Arbeitsplatzengagement zu verfolgen und zu reduzieren."
+    },
+    "5": {
+      "title": "Mental Health Hackathon 2024",
+      "description": "Eine digitale Plattform für psychische Gesundheit, die die Akzeptanz digitaler Lösungen fördert, indem sie Sprachbarrieren angeht und die Zugänglichkeit verbessert."
+    }
   },  
 
   "contact": {

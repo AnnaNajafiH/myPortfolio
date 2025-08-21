@@ -4,7 +4,11 @@ import { certificates } from '../data/certificates';
 import { useTranslation } from 'react-i18next';
 
 const Certificates: React.FC = () => {
-    const { t } = useTranslation();
+    const { t, ready } = useTranslation();
+    
+    // Wait for translations to load
+    if (!ready) return <div>Loading...</div>;
+    
   return (
     <section id="certificates" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +63,7 @@ const Certificates: React.FC = () => {
                 </div>
 
                 <p className="text-gray-700 dark:text-gray-300 text-sm">
-                  {certificate.description}
+                  {t(`certificatesList.${certificate.id}.description`, certificate.description)}  
                 </p>
               </div>
             </div>
