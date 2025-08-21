@@ -9,20 +9,24 @@ type SupportedLanguage = 'en' | 'de' | 'fa' ;
 const LanguageSelector: React.FC = () => {
   const { i18n, t } = useTranslation();
 
+  // Define a mapping of supported languages to their codes and country codes
   const languageMap: Record<SupportedLanguage, { code: string; countryCode: string }> = {
     en: { code: 'EN', countryCode: 'US' }, // or 'GB' for UK
     de: { code: 'DE', countryCode: 'DE' },
     fa: { code: 'FA', countryCode: 'IR' },
   };
 
+  //Check if current language is supported
   const isSupportedLanguage = (lang: string): lang is SupportedLanguage => {
     return ['en', 'de', 'fa'].includes(lang);
   };
 
+  //Set the current language
   const currentLanguage: SupportedLanguage = isSupportedLanguage(i18n.language)
     ? i18n.language
     : 'en';
 
+  //Change the language and update HTML lang attribute
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     document.documentElement.lang = lng; // Update HTML lang attribute for SEO
