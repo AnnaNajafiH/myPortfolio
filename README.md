@@ -1,52 +1,79 @@
 # Professional Portfolio Website
 
-A modern, responsive portfolio website built with React.js, TypeScript, and Tailwind CSS. Features a clean design with dark mode support, smooth animations, and a fully customizable structure.
+A modern, responsive portfolio website built with React.js, TypeScript, and Tailwind CSS. Features a clean design with dark mode, multi-language support (English, German, Persian), smooth animations, and a fully customizable structure.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=Portfolio+Preview)
+![Portfolio Preview](https://nnportfolio.netlify.app/)
 
 ## 🚀 Features
 
 - **Modern Design**: Clean, minimalist interface with professional styling
-- **Fully Responsive**: Mobile-first design that works on all devices
-- **Dark Mode Ready**: Built-in dark mode support structure
+- **Fully Responsive**: Mobile-first design that works on all devices  
+- **Dark Mode**: Complete dark mode implementation with localStorage persistence
+- **Multi-Language Support**: Full internationalization with English, German, and Persian
+- **Real Country Flags**: Professional flag icons for language selection
 - **Smooth Animations**: Elegant hover effects and transitions
-- **SEO Optimized**: Semantic HTML structure and meta tags
-- **Accessibility**: ARIA labels and keyboard navigation support
+- **SEO Optimized**: Semantic HTML structure, meta tags, and dynamic lang attributes
+- **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
 - **TypeScript**: Type-safe development environment
 - **Component-Based**: Modular, reusable React components
+- **Certificate Showcase**: Professional certificates and achievements section
+- **Project Portfolio**: Interactive project gallery with detailed views
+- **Contact Form**: Functional contact form with validation and status messages
 
 ## 🛠️ Tech Stack
 
 - **Frontend Framework**: React.js 18+ with TypeScript
 - **Styling**: Tailwind CSS v3
 - **Routing**: React Router v6
-- **Icons**: React Icons (Feather Icons)
+- **Internationalization**: i18next, react-i18next, i18next-browser-languagedetector
+- **Icons**: React Icons (Feather Icons, Ionicons)
+- **Flag Icons**: react-country-flag for real flag display
 - **Build Tool**: Vite
 - **Development**: ESLint for code quality
+- **Deployment**: Netlify with automatic builds
 
 ## 📁 Project Structure
 
 ```
 myPortfolio/
-├── public/                 # Static assets
+├── public/                 # Static assets and locale files
+│   └── locales/           # Translation files
+│       ├── en/            # English translations
+│       ├── de/            # German translations
+│       └── fa/            # Persian translations
 ├── src/
 │   ├── components/         # Reusable UI components
 │   │   ├── About.tsx
+│   │   ├── Certificates.tsx
 │   │   ├── ContactSection.tsx
 │   │   ├── Education.tsx
-│   │   ├── Experience.tsx
+│   │   ├── Exprimence.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
 │   │   ├── Hero.tsx
+│   │   ├── LanguageSelector.tsx
 │   │   ├── Layout.tsx
+│   │   ├── ProjectDetail.tsx
 │   │   ├── ProjectsSection.tsx
 │   │   └── Skills.tsx
 │   ├── data/              # Portfolio content data
+│   │   ├── certificates.ts
 │   │   └── portfolio.ts
+│   ├── locales/           # Source translation files
+│   │   ├── en/
+│   │   ├── de/
+│   │   └── fa/
 │   ├── pages/             # Page components
 │   │   ├── About.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Home.tsx
 │   │   └── Projects.tsx
+│   ├── assets/            # Images and static assets
+│   │   └── images/
+│   ├── scripts/           # Build scripts
+│   │   └── copyLocales.js
 │   ├── App.tsx            # Main application component
+│   ├── i18n.ts            # Internationalization configuration
 │   ├── main.tsx           # Application entry point
 │   └── index.css          # Global styles and Tailwind directives
 ├── eslint.config.js       # ESLint configuration
@@ -67,7 +94,7 @@ myPortfolio/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone <git@github.com:AnnaNajafiH/myPortfolio.git>
    cd myPortfolio
    ```
 
@@ -102,6 +129,16 @@ npm run preview
 
 Edit `src/data/portfolio.ts` to customize your personal information:
 
+```typescript
+export const personalInfo = {
+  name: "Your Name",
+  title: "Your Title", 
+  email: "your.email@example.com",
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourprofile",
+  location: "Your City, Country"
+};
+```
 
 ### 2. Skills Section
 
@@ -112,7 +149,7 @@ Update the skills object in `portfolio.ts`:
 
 ### Color Scheme
 
-The portfolio uses a blue-based color scheme defined in `tailwind.config.js`. To customize colors:
+The portfolio uses a blue-based color scheme with dark mode support defined in `tailwind.config.js`:
 
 ```javascript
 // tailwind.config.js
@@ -121,67 +158,120 @@ theme: {
     colors: {
       primary: {
         50: '#eff6ff',
-        // ... other shades
-        600: '#2563eb', // Main brand color
-        // ... other shades
+        500: '#3b82f6',
+        600: '#2563eb', // Main brand color  
+        700: '#1d4ed8',
       }
     }
   }
 }
 ```
 
-### Typography
+### Dark Mode
 
-The portfolio uses Inter font. To change fonts, update the import in `src/index.css`:
+Dark mode is fully implemented with:
+- Automatic system preference detection
+- Manual toggle in header
+- localStorage persistence
+- Smooth transitions between themes
 
-```css
-@import url('https://fonts.googleapis.com/css2?family=Your+Font:wght@400;500;600;700&display=swap');
-```
+### Custom Components
 
-And update the Tailwind config:
-
-```javascript
-fontFamily: {
-  sans: ['Your Font', 'system-ui', 'sans-serif'],
-}
-```
-
-### Component Styles
-
-Custom component styles are defined in `src/index.css` using Tailwind's `@layer` directive:
+Key component classes defined in `src/index.css`:
 
 ```css
 @layer components {
-  .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-20;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-blue-600 bg-clip-text text-transparent;
   }
 }
 ```
 
+### Typography
+
+The portfolio uses Inter font from Google Fonts. To change fonts, update the import in `src/index.css`:
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+```
+
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server (includes locale copying)
+- `npm run build` - Build for production (includes locale copying)  
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint for code quality
+
+## 🌟 Key Features Breakdown
+
+### Certificate Showcase
+- Professional certificate display with images
+- Multi-language descriptions
+- External links to verification
+- Responsive grid layout
+
+### Project Portfolio  
+- Interactive project cards with hover effects
+- Detailed project pages with routing
+- Technology tags and live demo links
+- Mobile-optimized layouts
+
+### Contact Form
+- Form validation with real-time feedback
+- Success/error status messages  
+- Simulated async submission
+- Responsive design
+
+### Language Selector
+- Dropdown with real country flags
+- Smooth language switching
+- SEO-friendly implementation
+- Mobile-responsive design
+
 ## 🌐 Deployment
 
-### Netlify
+### Netlify (Recommended)
 
-1. Build your project: `npm run build`
-2. Drag the `dist` folder to Netlify's deploy area
-3. Or connect your Git repository for automatic deployments
+The portfolio is optimized for Netlify deployment:
 
-### Vercel
+1. **Automatic Deployment**: Connect your GitHub repository
+2. **Build Settings**: 
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+3. **Environment Variables**: None required for basic setup
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel`
-3. Follow the prompts
+Live Demo: [https://nnportfolio.netlify.app/](https://nnportfolio.netlify.app/)
 
-### GitHub Pages
+### Manual Deployment Options
 
-1. Install gh-pages: `npm install --save-dev gh-pages`
-2. Add to package.json:
-   ```json
-   "scripts": {
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-3. Run: `npm run build && npm run deploy`
+**Vercel:**
+```bash
+npm i -g vercel
+vercel
+```
+
+**GitHub Pages:**
+```bash
+npm install --save-dev gh-pages
+npm run build && npx gh-pages -d dist
+```
+
+### Build Optimization
+
+The build process includes:
+- Automatic locale file copying
+- TypeScript compilation
+- Tailwind CSS purging
+- Asset optimization
+- Bundle splitting
 
 ## 📱 Responsive Design
 
@@ -206,54 +296,41 @@ Breakpoints:
 - Screen reader friendly
 - Focus indicators
 
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
-1. **Port already in use**
-   - Vite will automatically try the next available port
-   - Or specify a port: `npm run dev -- --port 3000`
+1. **Translation keys showing instead of text**
+   - Ensure locale files are copied: `node scripts/copyLocales.js`
+   - Check translation file structure matches component usage
+   - Verify i18n configuration in `src/i18n.ts`
 
-2. **Tailwind styles not loading**
-   - Ensure all paths in `tailwind.config.js` are correct
-   - Check that Tailwind directives are in `index.css`
+2. **Dark mode not persisting**
+   - Check localStorage permissions in browser
+   - Verify `Layout.tsx` dark mode logic
 
-3. **TypeScript errors**
+3. **Flags not displaying**
+   - Ensure `react-country-flag` is installed: `npm install react-country-flag`
+   - Check country codes in `LanguageSelector.tsx`
+
+4. **Build errors with TypeScript**
    - Run `npm run build` to see all TypeScript errors
-   - Check that all imports have proper file extensions
+   - Check import paths and file extensions
+   - Verify type definitions for new packages
 
-### Performance Tips
+5. **Tailwind styles not loading**
+   - Ensure all paths in `tailwind.config.js` are correct  
+   - Check that Tailwind directives are in `index.css`
+   - Verify content patterns include all component files
 
-- Optimize images before adding them
-- Use lazy loading for heavy components
-- Consider code splitting for larger applications
+### Performance Optimization
 
-## 📄 License
+- **Image Optimization**: Use WebP format for better compression
+- **Lazy Loading**: Implemented for project images
+- **Code Splitting**: Automatic with Vite and React Router
+- **Bundle Analysis**: Use `npm run build` to see bundle sizes
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-If you have any questions or need help customizing your portfolio:
-
-- Create an issue in the repository
-- Check the documentation above
-- Review the code comments for additional guidance
 
 ---
 
