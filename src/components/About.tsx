@@ -10,7 +10,7 @@ const About: React.FC = () => {
 
   const handleContactClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    navigate('/#contact');
+    navigate('/contact');
   };
 
   return (

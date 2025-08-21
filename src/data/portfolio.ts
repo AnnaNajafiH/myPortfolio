@@ -27,7 +27,7 @@ export const personalInfo = {
     background: "Over the past one and a half years, I’ve fully immersed myself in web development, completing intensive bootcamps and courses that have equipped me to build full-stack applications using modern technologies. Whether designing intuitive, responsive user interfaces or developing secure backend APIs, I enjoy transforming complex ideas into seamless and engaging digital experiences.",
     passion: "My scientific background has sharpened my analytical thinking, and my love for programming continuously drives me to learn, grow, and embrace new challenges with enthusiasm. I’m passionate about blending creativity with logic to turn ideas into powerful digital solutions.",
     endWords: "I’m excited to connect with fellow developers and professionals. Feel free to reach out if you’d like to collaborate or just chat about tech!",
-    technologies: ["JavaScript", "TypeScript", "Python", "React.js", "Node.js", "MongoDB", "SQL", "Tailwind CSS", "Bootstrap", "Docker", "Git", "Postman", "Figma"],
+    technologies: ["JavaScript", "TypeScript", "Python", "React.js", "Node.js","Express.js" , "MongoDB", "SQL", "Tailwind CSS", "Bootstrap", "Docker", "Git", "Postman","Swagger" , "Figma", "CI/CD", "Three.js", "Rest APIs", "FastAPI", "JWT Authentication", "Agile Methodologies", "Responsive Design", "AI-powered features"],
   }
 };
 
