@@ -58,7 +58,16 @@
     },
     "certificates": {
       "title": "گواهینامه‌ها و دستاوردها",
-      "viewCertificate": "مشاهده گواهینامه"
+      "viewCertificate": "مشاهده گواهینامه",
+      "alt": "گواهینامه {{title}}"
+    },
+    "pagination": {
+      "previous": "قبلی",
+      "next": "بعدی",
+      "showing": "نمایش {{from}} - {{to}} از {{total}} مورد"
+    },
+    "common": {
+      "loading": "در حال بارگذاری..."
     },
     "contact": {
       "title": "تماس با من",

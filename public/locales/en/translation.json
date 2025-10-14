@@ -59,7 +59,16 @@
   },
   "certificates": {
     "title": "Certificates & Achievements",
-    "viewCertificate": "View Certificate"
+    "viewCertificate": "View Certificate",
+    "alt": "{{title}} Certificate"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "showing": "Showing {{from}} - {{to}} of {{total}} entries"
+  },
+  "common": {
+    "loading": "Loading..."
   },
   "certificatesList": {
     "1": {

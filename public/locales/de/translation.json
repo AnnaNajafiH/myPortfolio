@@ -3,7 +3,8 @@
     "home": "Startseite",
     "about": "Über mich",
     "projects": "Projekte",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "certificates": "Zertifikate"
   },
 "hero": {
   "name": "Nahid Najafi",
@@ -57,7 +58,16 @@
   },
   "certificates": {
     "title": "Zertifikate & Auszeichnungen",
-    "viewCertificate": "Zertifikat ansehen"
+    "viewCertificate": "Zertifikat ansehen",
+    "alt": "{{title}} Zertifikat"
+  },
+  "pagination": {
+    "previous": "Zurück",
+    "next": "Weiter",
+    "showing": "Anzeige von {{from}} - {{to}} von {{total}} Einträgen"
+  },
+  "common": {
+    "loading": "Lädt..."
   },
   "certificatesList": {
     "1": {

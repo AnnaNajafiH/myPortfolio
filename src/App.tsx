@@ -8,6 +8,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ProjectDetail from './components/ProjectDetail';
+import Certificates from './pages/Certificates';
+import Education from './components/Education';
 
 const App: React.FC = () => {
   const { i18n } = useTranslation();   //This gets the i18n instance, which knows the current language.
@@ -25,6 +27,8 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
