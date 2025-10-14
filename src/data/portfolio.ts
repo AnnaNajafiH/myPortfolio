@@ -6,7 +6,7 @@ import bookLookImage from '../assets/images/booklook2.png';
 import SabaStudioImage from '../assets/images/sabaStudio.jpg';
 import molarMassImage from '../assets/images/molarMassImage.jpg';
 import molarMassImage1 from '../assets/images/molarMassImage1.jpg';
-import pokemonImage from '../assets/images/pokemon1.png';
+// import pokemonImage from '../assets/images/pokemon1.png';
 
 
 
