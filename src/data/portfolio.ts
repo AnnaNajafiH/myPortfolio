@@ -433,50 +433,50 @@ The project demonstrates proficiency in API integration, state management, and c
   //   },
 ];
 
-// export const experience = [
-//   {
-//     id: 1,
-//     title: "Senior Full Stack Developer",
-//     company: "Tech Solutions Inc.",
-//     location: "Remote",
-//     startDate: "Jan 2022",
-//     endDate: "Present",
-//     description: [
-//       "Led development of microservices architecture serving 100K+ users",
-//       "Mentored junior developers and conducted code reviews",
-//       "Improved application performance by 40% through optimization",
-//       "Implemented CI/CD pipelines and automated testing workflows"
-//     ]
-//   },
-//   {
-//     id: 2,
-//     title: "Frontend Developer",
-//     company: "Digital Agency Co.",
-//     location: "New York, NY",
-//     startDate: "Jun 2020",
-//     endDate: "Dec 2021",
-//     description: [
-//       "Developed responsive web applications for various clients",
-//       "Collaborated with designers to implement pixel-perfect UIs",
-//       "Integrated third-party APIs and payment gateways",
-//       "Maintained and improved existing codebase"
-//     ]
-//   },
-//   {
-//     id: 3,
-//     title: "Junior Web Developer",
-//     company: "StartUp Ventures",
-//     location: "San Francisco, CA",
-//     startDate: "Jan 2019",
-//     endDate: "May 2020",
-//     description: [
-//       "Built interactive web components using React.js",
-//       "Participated in agile development processes",
-//       "Assisted in database design and API development",
-//       "Wrote comprehensive unit and integration tests"
-//     ]
-//   }
-// ];
+export const experience = [
+  {
+    id: 1,
+    title: "Senior Full Stack Developer",
+    company: "Tech Solutions Inc.",
+    location: "Remote",
+    startDate: "Jan 2022",
+    endDate: "Present",
+    description: [
+      "Led development of microservices architecture serving 100K+ users",
+      "Mentored junior developers and conducted code reviews",
+      "Improved application performance by 40% through optimization",
+      "Implemented CI/CD pipelines and automated testing workflows"
+    ]
+  },
+  {
+    id: 2,
+    title: "Frontend Developer",
+    company: "Digital Agency Co.",
+    location: "New York, NY",
+    startDate: "Jun 2020",
+    endDate: "Dec 2021",
+    description: [
+      "Developed responsive web applications for various clients",
+      "Collaborated with designers to implement pixel-perfect UIs",
+      "Integrated third-party APIs and payment gateways",
+      "Maintained and improved existing codebase"
+    ]
+  },
+  {
+    id: 3,
+    title: "Junior Web Developer",
+    company: "StartUp Ventures",
+    location: "San Francisco, CA",
+    startDate: "Jan 2019",
+    endDate: "May 2020",
+    description: [
+      "Built interactive web components using React.js",
+      "Participated in agile development processes",
+      "Assisted in database design and API development",
+      "Wrote comprehensive unit and integration tests"
+    ]
+  }
+];
 
 export const education = [
     {
