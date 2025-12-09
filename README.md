@@ -41,10 +41,12 @@ I structured my project with maintainability in mind:
 If you want to run my portfolio locally:
 
 ### Requirements
+
 - Node.js (v18 or newer)
 - npm or yarn
 
 ### Local Development
+
 ```bash
 # First, install dependencies
 npm install
@@ -54,6 +56,7 @@ npm run dev
 ```
 
 ### Building for Production
+
 ```bash
 # Create optimized build
 npm run build
@@ -104,25 +107,29 @@ Thanks for checking out my portfolio! Feel free to reach out if you have any que
 ### Common Issues
 
 1. **Translation keys showing instead of text**
+
    - Ensure locale files are copied: `node scripts/copyLocales.js`
    - Check translation file structure matches component usage
    - Verify i18n configuration in `src/i18n.ts`
 
 2. **Dark mode not persisting**
+
    - Check localStorage permissions in browser
    - Verify `Layout.tsx` dark mode logic
 
 3. **Flags not displaying**
+
    - Ensure `react-country-flag` is installed: `npm install react-country-flag`
    - Check country codes in `LanguageSelector.tsx`
 
 4. **Build errors with TypeScript**
+
    - Run `npm run build` to see all TypeScript errors
    - Check import paths and file extensions
    - Verify type definitions for new packages
 
 5. **Tailwind styles not loading**
-   - Ensure all paths in `tailwind.config.js` are correct  
+   - Ensure all paths in `tailwind.config.js` are correct
    - Check that Tailwind directives are in `index.css`
    - Verify content patterns include all component files
 
@@ -132,7 +139,6 @@ Thanks for checking out my portfolio! Feel free to reach out if you have any que
 - **Lazy Loading**: Implemented for project images
 - **Code Splitting**: Automatic with Vite and React Router
 - **Bundle Analysis**: Use `npm run build` to see bundle sizes
-
 
 ---
 

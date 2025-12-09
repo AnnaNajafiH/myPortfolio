@@ -7,6 +7,7 @@ import SabaStudioImage from '../assets/images/sabaStudio.jpg';
 import molarMassImage from '../assets/images/molarMassImage.jpg';
 import molarMassImage1 from '../assets/images/molarMassImage1.jpg';
 import pokemonImage from '../assets/images/pokemon1.png';
+import B_SkinWise from '../assets/images/B_SkinWise.png';
 
 
 
@@ -71,69 +72,136 @@ export const skills = {
 
 export const projects = [
   {
-  id: 1, // or the next available ID in your data.ts file
-  name: "ChemCalc...",
-  shortDescription: "A full-stack chemistry tool for calculating molar mass and retrieving chemical properties.",
-  description: "A modern chemistry application built with React, TypeScript, and Python FastAPI that calculates the molar mass of chemical compounds, retrieves detailed chemical properties from PubChem, and maintains a searchable formula history using PostgreSQL/MySQL.",
-  detailedDescription: `The Molar Mass Calculator is a professional-grade chemistry tool designed for students, educators, and researchers. It combines a sleek React frontend with a powerful Python backend to deliver accurate chemical calculations and comprehensive property data.
+    id: 1,
+    name: "B.SkinWise - Science to Content",
+    shortDescription: "AI-powered ecosystem transforming R&D knowledge into scroll-stopping Instagram content and internal marketing briefs.",
+    description: "Winner of Beiersdorf's HerHackathon 'Decode Skincare Science' challenge. An AI-powered platform that bridges the gap between complex scientific research and engaging consumer content, while streamlining internal marketing communication.",
+    detailedDescription: `B.SkinWise is an innovative AI-powered Science-to-Content ecosystem developed during Beiersdorf's HerHackathon (Nov 20-22, 2025) in Hamburg. The platform addresses a critical challenge: transforming complex R&D knowledge into content that resonates with different audiences.
+
+The Challenge:
+At Beiersdorf, products are built on strong research, but complex science rarely reaches consumers in ways they understand. The mission was to create a dual-purpose system that not only transforms scientific insights into scroll-stopping Instagram content for Gen Z consumers but also converts research into actionable internal marketing briefs.
+
+The Solution:
+B.SkinWise continuously scans social media to detect emerging skincare trends—from viral hacks to ingredient buzz—and instantly generates posts that explain the real science behind them. The output is accurate, engaging, and visually compelling. For trust and quality assurance, a human-in-the-loop approval system reviews every external post before it goes live.
+
+For internal teams, the same engine converts scientific insights into campaign briefings, explainer webpages, and training snippets. Here, the focus is on speed, clarity, and creativity—enabling teams to brief faster, align better, and spark more confident storytelling.
+
+Built with React 19, TypeScript, and Vite, the application showcases modern frontend architecture with Context API and useReducer for state management. The responsive design adapts seamlessly across desktop, tablet, and mobile devices, featuring dark/light mode support, interactive data visualizations with p5.js, and an intuitive review queue system.
+
+Key architectural decisions include component-based design with 30+ reusable components, type-safe development ensuring reliability, clean code organization following best practices, and accessibility-first approach with ARIA compliance. The platform demonstrates the power of AI in making science always-on, trend-aware, and instantly shareable.`,
+    features: [
+      "Real-time Social Media Trend Detection",
+      "AI-Powered Content Generation for Instagram",
+      "Human-in-the-Loop Approval Workflow",
+      "Internal Marketing Brief Generator",
+      "Interactive Analytics Dashboard",
+      "Campaign Performance Tracking",
+      "Multi-format Content Export (Instagram, Web, PDF)",
+      "Dark/Light Mode with System Preference Detection",
+      "Responsive Design (Mobile/Tablet/Desktop)",
+      "Review Queue Management System",
+      "Content Version History",
+      "Scientific Accuracy Validation",
+      "Trend Analytics & Insights",
+      "Collaborative Approval System",
+      "Real-time Preview & Editing",
+      "Accessibility Features (ARIA, Keyboard Navigation)"
+    ],
+    challenges: [
+      "Designing an intuitive dual-workflow system for external (consumer-facing) and internal (marketing) content with different approval requirements",
+      "Implementing real-time social media trend analysis and transforming unstructured data into structured, actionable content insights",
+      "Building a sophisticated human-in-the-loop approval system with review queue, versioning, and collaborative feedback mechanisms",
+      "Creating a responsive, accessible UI that handles complex data visualizations and works seamlessly across all devices",
+      "Managing complex application state across 30+ components using Context API and useReducer pattern while maintaining performance",
+      "Ensuring scientific accuracy while making content engaging and Gen-Z-friendly, balancing technical precision with creative storytelling"
+    ],
+    technologies: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Context API",
+      "useReducer",
+      "Lucide Icons",
+      "p5.js",
+      "ESLint",
+      "Responsive Design"
+    ],
+    githubUrl: "https://github.com/AnnaNajafiH/science-to-content",
+    liveUrl: "https://decode-skincare-science.netlify.app/",
+    image: B_SkinWise,
+    gallery: [B_SkinWise],
+    status: "Completed",
+    duration: "3 days (Hackathon)"
+  },
+  {
+    id: 2, // or the next available ID in your data.ts file
+    name: "ChemCalc...",
+    shortDescription:
+      "A full-stack chemistry tool for calculating molar mass and retrieving chemical properties.",
+    description:
+      "A modern chemistry application built with React, TypeScript, and Python FastAPI that calculates the molar mass of chemical compounds, retrieves detailed chemical properties from PubChem, and maintains a searchable formula history using PostgreSQL/MySQL.",
+    detailedDescription: `The Molar Mass Calculator is a professional-grade chemistry tool designed for students, educators, and researchers. It combines a sleek React frontend with a powerful Python backend to deliver accurate chemical calculations and comprehensive property data.
 
 The application features robust formula parsing with proper error handling, real-time validation, and automatic retrieval of compound data from the PubChem API. Users can calculate molar masses instantly, view molecular structures, and access key chemical properties including state at room temperature, boiling/melting points, density, IUPAC names, and hazard classifications.
 
 The project implements a responsive design that works seamlessly across desktop and mobile devices, with special attention to handling long IUPAC names and complex chemical data. A complete formula history system allows users to save, edit, and reuse previous calculations.
 
 The backend uses FastAPI with SQLAlchemy ORM, supporting both PostgreSQL (cloud) and MySQL (local) databases. The entire application is containerized with Docker for consistent development and deployment across environments. The deployment configuration supports both local development and cloud hosting on platforms like Render and Netlify.`,
-  features: [
-    "Chemical Formula Parsing & Validation",
-    "Accurate Molar Mass Calculation",
-    "PubChem API Integration",
-    "Molecular Structure Visualization",
-    "Chemical Property Lookup",
-    "Formula History Management",
-    "Dark/Light Mode Support",
-    "Responsive Mobile Design",
-    "Cross-Database Support (PostgreSQL/MySQL)",
-    "Docker Containerization",
-    "Cloud Deployment Configuration",
-    "Formula Editing & Reuse"
-  ],
-  challenges: [
-    "Developing a robust chemical formula parser with proper validation",
-    "Creating a responsive UI for complex chemical data and long IUPAC names",
-    "Implementing database flexibility to support both cloud and local environments",
-    "Ensuring proper error handling in both frontend and backend components",
-    "Integrating with external chemical databases via PubChem API",
-    "Setting up containerized deployment across different environments"
-  ],
-  technologies: [
-    "React",
-    "TypeScript",
-    "Python",
-    "FastAPI",
-    "SQLite",
-    "SQLAlchemy",
-    "Docker",
-    "Bootstrap",
-    "PubChem API"
-  ],
-  githubUrl: "https://github.com/AnnaNajafiH/Chemistry-app",
-  liveUrl: "https://chemcal.netlify.app/", 
-  image: molarMassImage, 
-  gallery: [molarMassImage1], 
-  status: "In Progress",
-  duration: "1 week"
-},
+    features: [
+      "Chemical Formula Parsing & Validation",
+      "Accurate Molar Mass Calculation",
+      "PubChem API Integration",
+      "Molecular Structure Visualization",
+      "Chemical Property Lookup",
+      "Formula History Management",
+      "Dark/Light Mode Support",
+      "Responsive Mobile Design",
+      "Cross-Database Support (PostgreSQL/MySQL)",
+      "Docker Containerization",
+      "Cloud Deployment Configuration",
+      "Formula Editing & Reuse",
+    ],
+    challenges: [
+      "Developing a robust chemical formula parser with proper validation",
+      "Creating a responsive UI for complex chemical data and long IUPAC names",
+      "Implementing database flexibility to support both cloud and local environments",
+      "Ensuring proper error handling in both frontend and backend components",
+      "Integrating with external chemical databases via PubChem API",
+      "Setting up containerized deployment across different environments",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "SQLite",
+      "SQLAlchemy",
+      "Docker",
+      "Bootstrap",
+      "PubChem API",
+    ],
+    githubUrl: "https://github.com/AnnaNajafiH/Chemistry-app",
+    liveUrl: "https://chemcal.netlify.app/",
+    image: molarMassImage,
+    gallery: [molarMassImage1],
+    status: "In Progress",
+    duration: "1 week",
+  },
   {
-    id: 2,
+    id: 3,
     name: "SStudio",
-    shortDescription: "A modern full-stack website showcasing architectural projects with clean design and a seamless user experience.",
-    description: "A Full-Stack architecture portfolio platform built with modern web technologies, featuring a responsive React frontend and robust Node.js backend. This comprehensive application demonstrates modern UI/UX design principles for architectural showcases.",
+    shortDescription:
+      "A modern full-stack website showcasing architectural projects with clean design and a seamless user experience.",
+    description:
+      "A Full-Stack architecture portfolio platform built with modern web technologies, featuring a responsive React frontend and robust Node.js backend. This comprehensive application demonstrates modern UI/UX design principles for architectural showcases.",
     detailedDescription: `SStudio is a comprehensive architecture portfolio solution that showcases modern web development practices combined with elegant design presentation. The platform features a fully responsive React frontend built with TypeScript and Tailwind CSS, ensuring type safety, beautiful styling, and exceptional developer experience. The backend leverages Express.js and MongoDB to provide a robust and scalable API for project management.
   
   Key features include project categorization with advanced filtering, image gallery management, contact form integration, and a clean, professional interface designed specifically for architecture website. The application demonstrates full CRUD operations for project management, advanced state management with custom React hooks, and follows RESTful API design principles.
   
   The project is secured with JWT (JSON Web Token) authentication, ensuring safe and authorized access to project management features. This demonstrates my ability to implement secure full-stack authentication flows alongside modern JavaScript frameworks, responsive design, and scalable backend services.`,
     features: [
-      "Advanced Category Filtering", 
+      "Advanced Category Filtering",
       "Image Gallery & Media Management",
       "Contact Form Integration",
       "Responsive Design System",
@@ -148,7 +216,7 @@ The backend uses FastAPI with SQLAlchemy ORM, supporting both PostgreSQL (cloud)
       "Global State Management",
       "Rate Limiting & Security",
       "Professional Logging",
-      "Docker Deployment Ready"
+      "Docker Deployment Ready",
     ],
     challenges: [
       // "Implementing complex filtering and search functionality",
@@ -171,13 +239,14 @@ The backend uses FastAPI with SQLAlchemy ORM, supporting both PostgreSQL (cloud)
     image: SabaStudioImage,
     gallery: [SabaStudioImage], // You can add more images later
     status: "In Progress",
-    duration: " 2 weeks"
+    duration: " 2 weeks",
   },
   {
-    id: 3,
+    id: 4,
     name: "BookLook",
     shortDescription: "A web app for managing public bookshelf worldwide.",
-    description: "A responsive full-stack web application designed to manage public bookshelf systems, featuring AI-powered tools and fostering community engagement.",
+    description:
+      "A responsive full-stack web application designed to manage public bookshelf systems, featuring AI-powered tools and fostering community engagement.",
     detailedDescription: `BookLook is an innovative platform that transforms the way people interact with public bookshelves. It allows users to easily explore and locate books placed in community bookshelves found in parks, cafés, and other public spaces. Through the platform, readers can discover which books are available nearby, track where certain books are placed, and even contribute by adding their own books to these shelves.
 
 Built with React.js on the frontend and powered by an Express.js backend, BookLook offers a smooth and modern user experience. It integrates advanced AI-driven features, such as a chatbot for answering queries and an AI image generator that creates personalized profile visuals based on the user’s bio. These tools not only enhance interaction but also bring a playful, personalized touch to how users engage with books and the platform itself.
@@ -199,7 +268,7 @@ Beyond its intelligent features, BookLook ensures secure access with JWT-based a
       "Community reviews and ratings",
       "Advanced filtering options",
       "Mobile-responsive design",
-      "Dark mode support"
+      "Dark mode support",
     ],
     challenges: [
       // "Integrating AI image generation APIs",
@@ -208,19 +277,31 @@ Beyond its intelligent features, BookLook ensures secure access with JWT-based a
       // "Managing complex user permissions and roles",
       // "Optimizing image loading and caching"
     ],
-    technologies: ["React.js", "JavaScript", "Express.js","MongoDB","JWT", "AI Image Generator", "AI Powered Chatbot", "Tailwind CSS", "React Leaflet"],
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "AI Image Generator",
+      "AI Powered Chatbot",
+      "Tailwind CSS",
+      "React Leaflet",
+    ],
     githubUrl: "https://github.com/AnnaNajafiH/Book_look",
     liveUrl: "https://booklook24-1.onrender.com/",
     image: bookLookImage,
     gallery: [bookLookImage], // You can add more images later
     status: "Completed",
-    duration: "1 months"
+    duration: "1 months",
   },
   {
-    id: 4,
+    id: 5,
     name: "EasyShop",
-    shortDescription: "A comprehensive full-stack e-commerce platform with integrated payment methods.",
-    description: "A full-stack e-commerce application built with modern web technologies, featuring a responsive React frontend using TypeScript and a robust Express.js backend. This comprehensive platform showcases the entire purchasing process, including order management, address handling, payment methods, payment processing, and a purchase history.",
+    shortDescription:
+      "A comprehensive full-stack e-commerce platform with integrated payment methods.",
+    description:
+      "A full-stack e-commerce application built with modern web technologies, featuring a responsive React frontend using TypeScript and a robust Express.js backend. This comprehensive platform showcases the entire purchasing process, including order management, address handling, payment methods, payment processing, and a purchase history.",
     detailedDescription: `EasyShop is a complete e-commerce solution demonstrating modern full-stack development practices with many features. The platform includes a fully responsive React frontend built with TypeScript and Bootstrap, ensuring type safety and a beautiful, responsive design.
 
 The backend leverages Express.js with TypeScript and MongoDB, providing a robust and scalable API with advanced security features including rate limiting, input validation, CORS protection, and professional logging with Winston. The application implements secure user authentication with JWT tokens, comprehensive order management, and seamless PayPal payment integration.
@@ -228,55 +309,57 @@ The backend leverages Express.js with TypeScript and MongoDB, providing a robust
 Key architectural features include global state management using React Context and useReducer hooks, advanced error handling with custom middleware, database optimization with connection pooling, and production-ready deployment configuration with Docker support. The platform demonstrates CRUD operations for product and order management, real-time cart updates, protected routes, and comprehensive order tracking.
 `,
     features: [
-        "User Authentication & Authorization",
-        "Product Catalog with Filtering",
-        "Shopping Cart Management", 
-        "PayPal Payment Integration",
-        "Order Management System",
-        "Order History & Tracking",
-        "Real-time Cart Updates",
-        "Protected Routes & Middleware",
-        "Responsive Design System",
-        "Admin Dashboard Features",
-        "Global State Management",
-        "Dark Mode Support",
-        "Rate Limiting & Security",
-        "Professional Logging",
-        "SEO-Optimized Routing",
-        "Docker Deployment Ready"
+      "User Authentication & Authorization",
+      "Product Catalog with Filtering",
+      "Shopping Cart Management",
+      "PayPal Payment Integration",
+      "Order Management System",
+      "Order History & Tracking",
+      "Real-time Cart Updates",
+      "Protected Routes & Middleware",
+      "Responsive Design System",
+      "Admin Dashboard Features",
+      "Global State Management",
+      "Dark Mode Support",
+      "Rate Limiting & Security",
+      "Professional Logging",
+      "SEO-Optimized Routing",
+      "Docker Deployment Ready",
     ],
     challenges: [
-        // "Implementing secure PayPal payment processing workflow",
-        // "Managing complex global state across multiple components",
-        // "Building real-time cart synchronization and updates",
-        // "Ensuring data consistency between frontend and backend",
-        // "Implementing comprehensive order management system",
-        // // "Optimizing database performance with connection pooling",
-        // "Deploying with proper environment configuration"
+      // "Implementing secure PayPal payment processing workflow",
+      // "Managing complex global state across multiple components",
+      // "Building real-time cart synchronization and updates",
+      // "Ensuring data consistency between frontend and backend",
+      // "Implementing comprehensive order management system",
+      // // "Optimizing database performance with connection pooling",
+      // "Deploying with proper environment configuration"
     ],
     technologies: [
-        "TypeScript",
-        "React",
-        "Express.js", 
-        "MongoDB",
-        "Bootstrap",
-        "Tailwind CSS",
-        "PayPal API",
-        "JWT Authentication",
-        "Docker",
-      ],
+      "TypeScript",
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Bootstrap",
+      "Tailwind CSS",
+      "PayPal API",
+      "JWT Authentication",
+      "Docker",
+    ],
     githubUrl: "https://github.com/AnnaNajafiH/EasyShop",
     liveUrl: "https://easyshop-frontend-u9wj.onrender.com/",
     image: easyShopImage2,
-    gallery: [easyShopImage, easyShopImage3, easyShopImage4 ], // You can add more images later
+    gallery: [easyShopImage, easyShopImage3, easyShopImage4], // You can add more images later
     status: "In Progress",
-    duration: "3 weeks"
+    duration: "3 weeks",
   },
   {
-    id: 5,
+    id: 6,
     name: "Pokémon Play",
-    shortDescription: "An interactive Pokémon battle game with comprehensive Pokédex functionality.",
-    description: "An engaging Pokémon-themed application featuring battle mechanics, Pokédex exploration, and responsive design.",
+    shortDescription:
+      "An interactive Pokémon battle game with comprehensive Pokédex functionality.",
+    description:
+      "An engaging Pokémon-themed application featuring battle mechanics, Pokédex exploration, and responsive design.",
     detailedDescription: `Pokémon Play is an interactive web application that brings the beloved Pokémon universe to life through modern web technologies. Built with React and featuring a sleek Tailwind CSS design, this application provides users with an immersive Pokémon experience.
 
 The application features a comprehensive Pokédex with detailed information about various Pokémon species, including stats, abilities, and evolution chains. Users can engage in simulated battles, explore different Pokémon types, and track their progress through secure user authentication.
@@ -290,14 +373,14 @@ The project demonstrates proficiency in API integration, state management, and c
       "Type Effectiveness Calculator",
       "Responsive Game Interface",
       "User Authentication",
-      "Battle History & Analytics"
+      "Battle History & Analytics",
     ],
     challenges: [
       "Implementing complex battle mechanics",
       "Managing large datasets of Pokémon information",
       "Creating smooth animations and transitions",
       "Optimizing performance for mobile devices",
-      "Balancing game mechanics for fair play"
+      "Balancing game mechanics for fair play",
     ],
     technologies: ["JavaScript", "React", "Express.js", "Tailwind CSS", "JWT"],
     githubUrl: "https://github.com/AnnaNajafiH/WD51-pokeFront",
@@ -305,95 +388,95 @@ The project demonstrates proficiency in API integration, state management, and c
     image: pokemonImage,
     gallery: [pokemonImage], // You can add more images later
     status: "Completed",
-    duration: "2 weeks"
+    duration: "2 weeks",
   },
-//   {
-//     id: 5,
-//     name: "OnlinShop",
-//     shortDescription: "A modern TypeScript e-commerce application built with React, featuring shopping cart functionality, user authentication, and responsive design.",
-//     description: "A comprehensive TypeScript-based online shopping platform built with React and Vite, featuring advanced state management, user authentication, shopping cart functionality, and a modern responsive design using Tailwind CSS.",
-//     detailedDescription: `ShoppingTS is a full-featured e-commerce application that demonstrates modern TypeScript and React development practices. The platform features a responsive React frontend built with TypeScript and Tailwind CSS, ensuring type safety, beautiful styling, and exceptional developer experience.
-  
-//   The application includes comprehensive shopping cart functionality with persistent local storage, user authentication with protected routes, product catalog management, and a clean checkout process. The project showcases advanced React patterns including custom hooks, context API for state management, and component composition for reusable UI elements.
-  
-//   Key architectural decisions include the use of custom hooks for local storage management, React Context for global state management, private route protection for authenticated features, and a modular component structure that promotes code reusability and maintainability. The application demonstrates full CRUD operations for cart management, advanced TypeScript typing for data models, and modern React Router implementation for SPA navigation.`,
-//     features: [
-//       "Shopping Cart Management",
-//       "User Authentication & Protected Routes",
-//       "Product Catalog & Detail Views",
-//       "Persistent Cart with Local Storage",
-//       "Responsive Design System",
-//       "Type-Safe Development with TypeScript",
-//       "Modern React Hooks & Context API",
-//       "JSON Server API Integration",
-//       "Checkout Process Flow"
-//     ],
-//     challenges: [
-//       "Implementing persistent shopping cart functionality with local storage",
-//       "Creating type-safe data models and API integration",
-//       "Managing complex application state with React Context",
-//       "Implementing protected routes and authentication flow",
-//       "Ensuring responsive design across all device sizes"
-//     ],
-//     technologies: [
-//       "TypeScript",
-//       "React",
-//       "Tailwind CSS",
-//       "JSON Server",
-//     ],
-//     githubUrl: "https://github.com/YourUsername/ShoppingTS",
-//     liveUrl: "https://shoppingts-demo.onrender.com/",
-//     image: "ShoppingTSImage", // You'll need to import this
-//     gallery: ["ShoppingTSImage"], // You can add more images later
-//     status: "Completed",
-//     duration: "3 months"
-//   },
+  //   {
+  //     id: 5,
+  //     name: "OnlinShop",
+  //     shortDescription: "A modern TypeScript e-commerce application built with React, featuring shopping cart functionality, user authentication, and responsive design.",
+  //     description: "A comprehensive TypeScript-based online shopping platform built with React and Vite, featuring advanced state management, user authentication, shopping cart functionality, and a modern responsive design using Tailwind CSS.",
+  //     detailedDescription: `ShoppingTS is a full-featured e-commerce application that demonstrates modern TypeScript and React development practices. The platform features a responsive React frontend built with TypeScript and Tailwind CSS, ensuring type safety, beautiful styling, and exceptional developer experience.
+
+  //   The application includes comprehensive shopping cart functionality with persistent local storage, user authentication with protected routes, product catalog management, and a clean checkout process. The project showcases advanced React patterns including custom hooks, context API for state management, and component composition for reusable UI elements.
+
+  //   Key architectural decisions include the use of custom hooks for local storage management, React Context for global state management, private route protection for authenticated features, and a modular component structure that promotes code reusability and maintainability. The application demonstrates full CRUD operations for cart management, advanced TypeScript typing for data models, and modern React Router implementation for SPA navigation.`,
+  //     features: [
+  //       "Shopping Cart Management",
+  //       "User Authentication & Protected Routes",
+  //       "Product Catalog & Detail Views",
+  //       "Persistent Cart with Local Storage",
+  //       "Responsive Design System",
+  //       "Type-Safe Development with TypeScript",
+  //       "Modern React Hooks & Context API",
+  //       "JSON Server API Integration",
+  //       "Checkout Process Flow"
+  //     ],
+  //     challenges: [
+  //       "Implementing persistent shopping cart functionality with local storage",
+  //       "Creating type-safe data models and API integration",
+  //       "Managing complex application state with React Context",
+  //       "Implementing protected routes and authentication flow",
+  //       "Ensuring responsive design across all device sizes"
+  //     ],
+  //     technologies: [
+  //       "TypeScript",
+  //       "React",
+  //       "Tailwind CSS",
+  //       "JSON Server",
+  //     ],
+  //     githubUrl: "https://github.com/YourUsername/ShoppingTS",
+  //     liveUrl: "https://shoppingts-demo.onrender.com/",
+  //     image: "ShoppingTSImage", // You'll need to import this
+  //     gallery: ["ShoppingTSImage"], // You can add more images later
+  //     status: "Completed",
+  //     duration: "3 months"
+  //   },
 ];
 
-export const experience = [
-  {
-    id: 1,
-    title: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    location: "Remote",
-    startDate: "Jan 2022",
-    endDate: "Present",
-    description: [
-      "Led development of microservices architecture serving 100K+ users",
-      "Mentored junior developers and conducted code reviews",
-      "Improved application performance by 40% through optimization",
-      "Implemented CI/CD pipelines and automated testing workflows"
-    ]
-  },
-  {
-    id: 2,
-    title: "Frontend Developer",
-    company: "Digital Agency Co.",
-    location: "New York, NY",
-    startDate: "Jun 2020",
-    endDate: "Dec 2021",
-    description: [
-      "Developed responsive web applications for various clients",
-      "Collaborated with designers to implement pixel-perfect UIs",
-      "Integrated third-party APIs and payment gateways",
-      "Maintained and improved existing codebase"
-    ]
-  },
-  {
-    id: 3,
-    title: "Junior Web Developer",
-    company: "StartUp Ventures",
-    location: "San Francisco, CA",
-    startDate: "Jan 2019",
-    endDate: "May 2020",
-    description: [
-      "Built interactive web components using React.js",
-      "Participated in agile development processes",
-      "Assisted in database design and API development",
-      "Wrote comprehensive unit and integration tests"
-    ]
-  }
-];
+// export const experience = [
+//   {
+//     id: 1,
+//     title: "Senior Full Stack Developer",
+//     company: "Tech Solutions Inc.",
+//     location: "Remote",
+//     startDate: "Jan 2022",
+//     endDate: "Present",
+//     description: [
+//       "Led development of microservices architecture serving 100K+ users",
+//       "Mentored junior developers and conducted code reviews",
+//       "Improved application performance by 40% through optimization",
+//       "Implemented CI/CD pipelines and automated testing workflows"
+//     ]
+//   },
+//   {
+//     id: 2,
+//     title: "Frontend Developer",
+//     company: "Digital Agency Co.",
+//     location: "New York, NY",
+//     startDate: "Jun 2020",
+//     endDate: "Dec 2021",
+//     description: [
+//       "Developed responsive web applications for various clients",
+//       "Collaborated with designers to implement pixel-perfect UIs",
+//       "Integrated third-party APIs and payment gateways",
+//       "Maintained and improved existing codebase"
+//     ]
+//   },
+//   {
+//     id: 3,
+//     title: "Junior Web Developer",
+//     company: "StartUp Ventures",
+//     location: "San Francisco, CA",
+//     startDate: "Jan 2019",
+//     endDate: "May 2020",
+//     description: [
+//       "Built interactive web components using React.js",
+//       "Participated in agile development processes",
+//       "Assisted in database design and API development",
+//       "Wrote comprehensive unit and integration tests"
+//     ]
+//   }
+// ];
 
 export const education = [
     {

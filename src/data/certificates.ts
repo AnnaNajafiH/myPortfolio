@@ -2,6 +2,7 @@ import WBSImage from '../assets/images/WBS-School.jpg';
 import CS50PImage from '../assets/images/CS50P.png';
 import HackfestivalImage from '../assets/images/Hackfestival2024.jpg';
 import MentalHealthHackathonImage from '../assets/images/MentalHealth_Hackathon.jpg';
+import noImage from '../assets/images/image.png';
 import devOpsImage from '../assets/images/devOps.jpg';
 
 export interface Certificate {
@@ -48,7 +49,7 @@ export interface Certificate {
       id: 4,
       title: "Winner - Hackfestival 2024",
       organization: "The Hackathon Company",
-      date: "March 2024",
+      date: "06-08 September 2024",
       description: "Winner of the Roche Company Challenge at the Hackfestival 2024 in Mannheim, Germany, with a gamified web app that enables employees to track and reduce their individual CO₂ footprint through personalized challenges and workplace engagement.",
       image: HackfestivalImage,
       link: "https://www.roche.de/presse/news/innovationskraft-fuer-nachhaltigkeit-roche-auf-dem-hackfestival-mannheim#70b9d713-8821-4558-aabb-2b53cf68cd80-download-anchor"
@@ -57,10 +58,20 @@ export interface Certificate {
       id: 5,
       title: "Mental Health Hackathon 2024",
       organization: "dgppn - Deutsche Gesellschaft für Psychiatrie und Psychotherapie, Psychosomatik und Nervenheilkunde",
-      date: "November 2024",
+      date: "28-29 November 2024",
       description: "a digital mental health platform that promotes the acceptance of digital solutions by addressing language barriers and enhancing accessibility.",
       image: MentalHealthHackathonImage,
       link: "https://www.dgppn.de/veranstaltungen/mental-health-hackathon.html"
   
+    }
+,
+    {
+      id: 6,
+      title: "Winner - Decode Skincare Science (HerHackathon)",
+      organization: "Beiersdorf — HerHackathon, Hamburg",
+      date: "20–22 November 2025",
+      description: "Participated in Beiersdorf's HerHackathon (Decode Skincare Science) and won the challenge for building an AI-powered Science-to-Content ecosystem that transforms R&D insights into trend-aware social and internal content. The system detects emerging skincare trends, generates accurate Gen-Z-facing Instagram content (human-in-the-loop approval), and produces internal briefs and training snippets to speed up storytelling and alignment.",
+      image: noImage,
+      link: "https://www.beiersdorf.com"
     }
   ];
